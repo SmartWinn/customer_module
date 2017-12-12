@@ -1,0 +1,942 @@
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Choose your payment Method</title>
+
+<!-- custom-theme -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Tabs Payment Form Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<!-- //custom-theme -->
+<link rel="shortcut icon" href="../images/ico/favicon.ico">
+<!-- font-awesome-icons -->
+<link href="../css/font-awesome.css" rel="stylesheet">
+<link href="../css/payment.css" rel="stylesheet" />
+<link href="../css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<style type="text/css">
+.popover{
+    display:block !important;
+    max-width: 400px!important;
+    width:auto;
+}
+</style>
+<body style="margin-bottom: 50px;">
+	<header class="header">
+		<div class="logodiv">
+			<a href="../index.html"><img src="../images/logo.png"></img></a>
+		</div>
+	</header>
+	<div class="container">
+		<div id="wrap">
+			<div class="step" id="step1">
+				<div class="number">
+					<span>1</span>
+				</div>
+				<div class="title">
+					<h1>Vehículo</h1>
+				</div>
+			</div>
+			<div class="content vehicle">
+				<div class="col-xs-6 col-sm-4 col-md-4">
+				  <label for="usr">Patente:</label>
+				  <input type="text" class="form-control" id="patente">
+				  <input type="checkbox" id="withpatente" style="clear: left;display: block;float: left;margin-top: 7px;" class="">
+				  <label for="withpatente" style="margin-top: 8px;margin-left: 15px;position: absolute;font-size: 10px;color: #8c8c8c;font-weight: bold;line-height: 10px;font-family: inherit;font-style: normal;text-transform: initial;">Vehículo sin Patente</label>
+				</div>
+				<div class="col-xs-6 col-sm-4 col-md-4">
+				 	<label for="usr">Tipo Vehículo:</label>
+				  	<select class="form-control">
+						<option value="">Seleccione</option>
+						<option value="1">AUTOMOVIL</option>
+						<option value="7">CAMION</option>
+						<option value="3">CAMIONETA</option>
+						<option value="6">FURGON</option>
+						<option value="4">JEEP</option>
+						<option value="8">MINI BUS</option>
+						<option value="9">MOTOCICLETA</option>
+						<option value="2">STATION WAGON</option>
+						<option value="5">VAN</option>
+					</select>
+					<br>
+				</div>
+				<div class="col-xs-6 col-sm-4 col-md-4">
+				  	<label for="usr">Color:</label>
+				  	<select class="form-control">
+						<option value="">Seleccione</option>
+						<option value="4">AMARILLO</option>
+						<option value="3">AZUL</option>
+						<option value="12">BEIGE</option>
+						<option value="2">BLANCO</option>
+						<option value="9">BURDEO</option>
+						<option value="10">CELESTE</option>
+						<option value="13">DORADO</option>
+						<option value="7">GRIS</option>
+						<option value="16">NARANJO</option>
+						<option value="6">NEGRO</option>
+						<option value="99">OTRO (SIN CODIGO)</option>
+						<option value="8">PLATA</option>
+						<option value="15">PLATA TITANIO</option>
+						<option value="11">PLATEADO</option>
+						<option value="1">ROJO</option>
+						<option value="14">ROSADO</option>
+						<option value="5">VERDE</option>
+					</select>
+					<br>
+				</div>
+				<div class="col-xs-6 col-sm-4 col-md-4 hidden forpatente">
+				  <label for="usr">Número de factura:</label>
+				  <input type="text" class="form-control" id="patente">
+				</div>
+				<div class="col-xs-6 col-sm-4 col-md-4 hidden forpatente">
+				  <label for="usr">Fecha de facturación:</label>
+				  <input type="text" class="form-control">
+				</div>
+				<div class="col-xs-6 col-sm-4 col-md-4">
+				  <label for="usr">Motor:<a class="btn" href="#" data-img="../images/products/contractor-auto.png" rel="popover" data-placement="bottom" data-original-title="Ingresa el número de chasis que encuentras en el padrón de tu vehículo." data-trigger="hover"><span class="fa fa-question-circle"></span></a></label>
+				  <input type="text" class="form-control upper">
+				</div>
+				<div class="col-xs-6 col-sm-4 col-md-4">
+				  <label for="usr">Chasis:<a class="btn" href="#" data-img="../images/products/contractor-auto.png" rel="popover" data-placement="bottom" data-original-title="Ingresa el número de chasis que encuentras en el padrón de tu vehículo." data-trigger="hover"><span class="fa fa-question-circle"></span></a></label>
+				  <input type="text" class="form-control upper">
+				</div>
+				<div class="col-xs-6 col-sm-4 col-md-4">
+				  <label for="usr">¿Vehículo en prenda?<a class="btn" href="#" data-content="Si tu vehículo fue adquirido mediante un crédito automotriz y aun no terminas de pagarlo." rel="popover" data-placement="bottom" data-original-title="¿Vehículo en prenda?" data-trigger="hover"><span class="fa fa-question-circle"></span></a></label>
+				  <select class="form-control" id="selyes">
+				  	<option>Seleccione</option>
+				  	<option value="1">NO</option>
+				  	<option value="2">SI</option>
+				  </select>
+				</div>
+				<div class="col-xs-6 col-sm-4 col-md-4 hidden" id="forselyes">
+				  <label for="usr">Nombre Acreedor Prendario</label>
+				  	<select class="form-control">
+					  	<option value="">Seleccione</option>
+						<option value="S|1">AMICAR</option>
+						<option value="S|2">AUTOMOTORA MITSUI LTDA.</option>
+						<option value="S|3">BANCO ATLAS</option>
+						<option value="S|4">BANCO BICE</option>
+						<option value="S|5">BANCO BILBAO VIZCAYA ARGENTARIA CHILE (BBVA)</option>
+						<option value="S|6">BANCO CITI</option>
+						<option value="S|7">BANCO CONDELL</option>
+						<option value="S|8">BANCO CONSORCIO (EX BANCO MONEX)</option>
+						<option value="S|9">BANCO CREDICHILE</option>
+						<option value="S|10">BANCO DE CHILE</option>
+						<option value="S|11">BANCO DE CRÉDITO E INVERSIONES (BCI)</option>
+						<option value="S|12">BANCO DE LA NACIÓN ARGENTINA</option>
+						<option value="S|13">BANCO DEL ESTADO DE CHILE</option>
+						<option value="S|14">BANCO DO BRASIL S.A.</option>
+						<option value="S|15">BANCO EDWARDS</option>
+						<option value="S|16">BANCO FALABELLA</option>
+						<option value="S|17">BANCO INTERNACIONAL</option>
+						<option value="S|18">BANCO ITAÚ CHILE</option>
+						<option value="S|19">BANCO NOVA</option>
+						<option value="S|20">BANCO PARIS</option>
+						<option value="S|21">BANCO PENTA</option>
+						<option value="S|22">BANCO RIPLEY</option>
+						<option value="S|23">BANCO SANTANDER CHILE</option>
+						<option value="S|24">BANCO SECURITY</option>
+						<option value="S|25">BANEFE</option>
+						<option value="S|26">BBVA EXPRESS</option>
+						<option value="S|27">BBVA SOCIEDAD DE LEASING INMOBILIARIO S.A.</option>
+						<option value="S|28">BICE CREDIAUTOS LIMITADA</option>
+						<option value="S|29">CAPUAL</option>
+						<option value="S|30">CMR AUTOMOTRIZ (SOLUCIONES CREDITICIAS CMR FALABELLA LTDA.)</option>
+						<option value="S|31">COOCRETAL</option>
+						<option value="S|32">COOPEUCH</option>
+						<option value="S|33">CORPBANCA</option>
+						<option value="S|34">DETACOOP</option>
+						<option value="S|35">DEUTSCHE BANK (CHILE)</option>
+						<option value="S|36">DNB NOR BANK ASA</option>
+						<option value="S|37">FACTORLINE S.A.</option>
+						<option value="S|38">FORUM SERVICIOS FINANCIEROS S.A.</option>
+						<option value="S|39">G.M.A.C. COMERCIAL AUTOMTRIZ CHILE S.A.</option>
+						<option value="S|40">HSBC BANK (CHILE)</option>
+						<option value="S|41">JP MORGAN CHASE BANK</option>
+						<option value="S|42">MARUBENI AUTO FINANCE LIMITADA</option>
+						<option value="S|50">MITSUI AUTO FINANCE CHILE LTDA.</option>
+						<option value="S|43">ORIENCOOP</option>
+						<option value="S|44">OTRO</option>
+						<option value="S|45">RABOBANK CHILE (EX HNS BANCO)</option>
+						<option value="S|46">SCOTIABANK CHILE</option>
+						<option value="S|51">TANNER S.A.</option>
+						<option value="S|47">TBANC</option>
+						<option value="S|48">THE BANK OF TOKYO-MITSUBISHI UFJ</option>
+						<option value="S|49">THE ROYAL BANK OF SCOTLAND (ANTES ABN AMBRO BANK)</option>
+			  		</select>
+				</div>
+				
+			</div>
+			<div class="step" id="step2">
+				<div class="number">
+					<span>2</span>
+				</div>
+				<div class="title">
+					<h1>Dirección de residencia</h1>
+				</div>
+			</div>
+			<div class="content">
+				<p>Especifica la dirección del dueño del vehículo. Se utilizará para comunicaciones importantes como la carta de cancelación, entre otros documentos.</p>
+				<div class="col-xs-12 col-sm-6 col-md-6">
+				  <label for="usr">Calle:</label>
+				  <input type="text" class="form-control">
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-3">
+				  <label>Número:</label>
+				  <input type="text" class="form-control">
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-3">
+				  <label>Depto:</label>
+				  <input type="text" class="form-control" placeholder="Opcional">
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-6">
+					<br>
+					<label>Región</label>
+					<select class="selectpicker form-control" id="region" data-live-search="true" required>
+	                    <option selected="selected" value=""></option>
+	                    <option value="1">15° Región de Arica y Parinacota</option>
+	                    <option value="2">1° Región de Tarapacá</option>
+	                    <option value="3">2° Región de Antofagasta</option>
+	                    <option value="4">3° Región de Atacama</option>
+	                    <option value="5">4° Región de Coquimbo</option>
+	                    <option value="6">5° Región de Valparaíso</option>
+	                    <option selected="selected" value="7">Región Metropolitana</option>
+	                    <option value="8">6° Región de O'Higgins</option>
+	                    <option value="9">7° Región de Maule</option>
+	                    <option value="10">8° Región de Biobío</option>
+	                    <option value="11">9° Región de Araucanía</option>
+	                    <option value="12">14° Región de Los Ríos</option>
+	                    <option value="13">10° Región de Los Lagos</option>
+	                    <option value="14">11° Región de Aysén</option>
+	                    <option value="15">12° Región de Magallanes y  Antártica Chilena</option>
+                	</select>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-6">
+					<br>
+					<label>Comuna</label>
+					<select class="selectpicker form-control" id="commune" data-live-search="true" required>
+	                    <option value=""></option>
+	                    <option value="275">Aisén</option>
+	                    <option value="72">Algarrobo</option>
+	                    <option value="337">Alhué</option>
+	                    <option value="178">Alto Biobío</option>
+	                    <option value="27">Alto del Carmen</option>
+	                    <option value="6">Alto Hospicio</option>
+	                    <option value="253">Ancud</option>
+	                    <option value="32">Andacollo</option>
+	                    <option value="221">Angol</option>
+	                    <option value="288">Antártica</option>
+	                    <option value="12">Antofagasta</option>
+	                    <option value="166">Antuco</option>
+	                    <option value="159">Arauco</option>
+	                    <option value="1">Arica</option>
+	                    <option value="333">Buin</option>
+	                    <option value="180">Bulnes</option>
+	                    <option value="60">Cabildo</option>
+	                    <option value="287">Cabo de Hornos</option>
+	                    <option value="167">Cabrero</option>
+	                    <option value="16">Calama</option>
+	                    <option value="244">Calbuco</option>
+	                    <option value="22">Caldera</option>
+	                    <option value="65">Calera</option>
+	                    <option value="334">Calera de Tango</option>
+	                    <option value="56">Calle Larga</option>
+	                    <option value="2">Camarones</option>
+	                    <option value="8">Camiña</option>
+	                    <option value="37">Canela</option>
+	                    <option value="160">Cañete</option>
+	                    <option value="201">Carahue</option>
+	                    <option value="73">Cartagena</option>
+	                    <option value="46">Casablanca</option>
+	                    <option value="252">Castro</option>
+	                    <option value="78">Catemu</option>
+	                    <option value="126">Cauquenes</option>
+	                    <option value="295">Cerrillos</option>
+	                    <option value="296">Cerro Navia</option>
+	                    <option value="269">Chaitén</option>
+	                    <option value="24">Chañaral</option>
+	                    <option value="127">Chanco</option>
+	                    <option value="107">Chépica</option>
+	                    <option value="148">Chiguayante</option>
+	                    <option value="281">Chile Chico</option>
+	                    <option value="179">Chillán</option>
+	                    <option value="184">Chillán Viejo</option>
+	                    <option value="108">Chimbarongo</option>
+	                    <option value="220">Cholchol</option>
+	                    <option value="254">Chonchi</option>
+	                    <option value="276">Cisnes</option>
+	                    <option value="181">Cobquecura</option>
+	                    <option value="245">Cochamó</option>
+	                    <option value="278">Cochrane</option>
+	                    <option value="84">Codegua</option>
+	                    <option value="182">Coelemu</option>
+	                    <option value="273">Coihaique</option>
+	                    <option value="183">Coihueco</option>
+	                    <option value="85">Coinco</option>
+	                    <option value="139">Colbún</option>
+	                    <option value="9">Colchane</option>
+	                    <option value="329">Colina</option>
+	                    <option value="222">Collipulli</option>
+	                    <option value="86">Coltauco</option>
+	                    <option value="41">Combarbalá</option>
+	                    <option value="146">Concepción</option>
+	                    <option value="297">Conchalí</option>
+	                    <option value="47">Concón</option>
+	                    <option value="117">Constitución</option>
+	                    <option value="161">Contulmo</option>
+	                    <option value="21">Copiapó</option>
+	                    <option value="31">Coquimbo</option>
+	                    <option value="147">Coronel</option>
+	                    <option value="233">Corral</option>
+	                    <option value="202">Cunco</option>
+	                    <option value="223">Curacautín</option>
+	                    <option value="338">Curacaví</option>
+	                    <option value="255">Curaco de Vélez</option>
+	                    <option value="162">Curanilahue</option>
+	                    <option value="203">Curarrehue</option>
+	                    <option value="118">Curepto</option>
+	                    <option value="129">Curicó</option>
+	                    <option value="256">Dalcahue</option>
+	                    <option value="25">Diego de Almagro</option>
+	                    <option value="87">Doñihue</option>
+	                    <option value="298">El Bosque</option>
+	                    <option value="185">El Carmen</option>
+	                    <option value="342">El Monte</option>
+	                    <option value="74">El Quisco</option>
+	                    <option value="75">El Tabo</option>
+	                    <option value="119">Empedrado</option>
+	                    <option value="224">Ercilla</option>
+	                    <option value="299">Estación Central</option>
+	                    <option value="149">Florida</option>
+	                    <option value="204">Freire</option>
+	                    <option value="28">Freirina</option>
+	                    <option value="246">Fresia</option>
+	                    <option value="247">Frutillar</option>
+	                    <option value="270">Futaleufú</option>
+	                    <option value="241">Futrono</option>
+	                    <option value="205">Galvarino</option>
+	                    <option value="4">General Lagos</option>
+	                    <option value="206">Gorbea</option>
+	                    <option value="88">Graneros</option>
+	                    <option value="277">Guaitecas</option>
+	                    <option value="66">Hijuelas</option>
+	                    <option value="271">Hualaihué</option>
+	                    <option value="130">Hualañé</option>
+	                    <option value="157">Hualpén</option>
+	                    <option value="150">Hualqui</option>
+	                    <option value="10">Huara</option>
+	                    <option value="29">Huasco</option>
+	                    <option value="300">Huechuraba</option>
+	                    <option value="36">Illapel</option>
+	                    <option value="301">Independencia</option>
+	                    <option value="5">Iquique</option>
+	                    <option value="343">Isla de Maipo</option>
+	                    <option value="54">Isla de Pascua</option>
+	                    <option value="48">Juan Fernández</option>
+	                    <option value="302">La Cisterna</option>
+	                    <option value="67">La Cruz</option>
+	                    <option value="101">La Estrella</option>
+	                    <option value="303">La Florida</option>
+	                    <option value="304">La Granja</option>
+	                    <option value="33">La Higuera</option>
+	                    <option value="59">La Ligua</option>
+	                    <option value="305">La Pintana</option>
+	                    <option value="306">La Reina</option>
+	                    <option value="30">La Serena</option>
+	                    <option value="240">La Unión</option>
+	                    <option value="242">Lago Ranco</option>
+	                    <option value="274">Lago Verde</option>
+	                    <option value="284">Laguna Blanca</option>
+	                    <option value="168">Laja</option>
+	                    <option value="330">Lampa</option>
+	                    <option value="234">Lanco</option>
+	                    <option value="89">Las Cabras</option>
+	                    <option value="307">Las Condes</option>
+	                    <option value="207">Lautaro</option>
+	                    <option value="158">Lebu</option>
+	                    <option value="131">Licantén</option>
+	                    <option value="68">Limache</option>
+	                    <option value="138">Linares</option>
+	                    <option value="102">Litueche</option>
+	                    <option value="79">Llaillay</option>
+	                    <option value="249">Llanquihue</option>
+	                    <option value="308">Lo Barnechea</option>
+	                    <option value="309">Lo Espejo</option>
+	                    <option value="310">Lo Prado</option>
+	                    <option value="109">Lolol</option>
+	                    <option value="208">Loncoche</option>
+	                    <option value="140">Longaví</option>
+	                    <option value="225">Lonquimay</option>
+	                    <option value="163">Los Alamos</option>
+	                    <option value="55">Los Andes</option>
+	                    <option value="165">Los Angeles</option>
+	                    <option value="235">Los Lagos</option>
+	                    <option value="248">Los Muermos</option>
+	                    <option value="226">Los Sauces</option>
+	                    <option value="38">Los Vilos</option>
+	                    <option value="151">Lota</option>
+	                    <option value="227">Lumaco</option>
+	                    <option value="90">Machalí</option>
+	                    <option value="311">Macul</option>
+	                    <option value="236">Máfil</option>
+	                    <option value="312">Maipú</option>
+	                    <option value="91">Malloa</option>
+	                    <option value="103">Marchihue</option>
+	                    <option value="20">María Elena</option>
+	                    <option value="339">María Pinto</option>
+	                    <option value="237">Mariquina</option>
+	                    <option value="120">Maule</option>
+	                    <option value="250">Maullín</option>
+	                    <option value="13">Mejillones</option>
+	                    <option value="209">Melipeuco</option>
+	                    <option value="336">Melipilla</option>
+	                    <option value="132">Molina</option>
+	                    <option value="42">Monte Patria</option>
+	                    <option value="92">Mostazal</option>
+	                    <option value="169">Mulchén</option>
+	                    <option value="170">Nacimiento</option>
+	                    <option value="110">Nancagua</option>
+	                    <option value="292">Natales</option>
+	                    <option value="104">Navidad</option>
+	                    <option value="171">Negrete</option>
+	                    <option value="186">Ninhue</option>
+	                    <option value="187">Ñiquén</option>
+	                    <option value="69">Nogales</option>
+	                    <option value="210">Nueva Imperial</option>
+	                    <option value="313">Ñuñoa</option>
+	                    <option value="279">OHiggins</option>
+	                    <option value="93">Olivar</option>
+	                    <option value="17">Ollagüe</option>
+	                    <option value="70">Olmué</option>
+	                    <option value="262">Osorno</option>
+	                    <option value="40">Ovalle</option>
+	                    <option value="344">Padre Hurtado</option>
+	                    <option value="211">Padre Las Casas</option>
+	                    <option value="34">Paiguano</option>
+	                    <option value="238">Paillaco</option>
+	                    <option value="335">Paine</option>
+	                    <option value="272">Palena</option>
+	                    <option value="111">Palmilla</option>
+	                    <option value="239">Panguipulli</option>
+	                    <option value="80">Panquehue</option>
+	                    <option value="61">Papudo</option>
+	                    <option value="105">Paredones</option>
+	                    <option value="141">Parral</option>
+	                    <option value="314">Pedro Aguirre Cerda</option>
+	                    <option value="121">Pelarco</option>
+	                    <option value="128">Pelluhue</option>
+	                    <option value="188">Pemuco</option>
+	                    <option value="345">Peñaflor</option>
+	                    <option value="315">Peñalolén</option>
+	                    <option value="122">Pencahue</option>
+	                    <option value="152">Penco</option>
+	                    <option value="112">Peralillo</option>
+	                    <option value="212">Perquenco</option>
+	                    <option value="62">Petorca</option>
+	                    <option value="94">Peumo</option>
+	                    <option value="11">Pica</option>
+	                    <option value="95">Pichidegua</option>
+	                    <option value="100">Pichilemu</option>
+	                    <option value="189">Pinto</option>
+	                    <option value="327">Pirque</option>
+	                    <option value="213">Pitrufquén</option>
+	                    <option value="113">Placilla</option>
+	                    <option value="190">Portezuelo</option>
+	                    <option value="289">Porvenir</option>
+	                    <option value="7">Pozo Almonte</option>
+	                    <option value="290">Primavera</option>
+	                    <option value="316">Providencia</option>
+	                    <option value="49">Puchuncaví</option>
+	                    <option value="214">Pucón</option>
+	                    <option value="317">Pudahuel</option>
+	                    <option value="326">Puente Alto</option>
+	                    <option value="243">Puerto Montt</option>
+	                    <option value="263">Puerto Octay</option>
+	                    <option value="251">Puerto Varas</option>
+	                    <option value="114">Pumanque</option>
+	                    <option value="43">Punitaqui</option>
+	                    <option value="283">Punta Arenas</option>
+	                    <option value="257">Puqueldón</option>
+	                    <option value="228">Purén</option>
+	                    <option value="264">Purranque</option>
+	                    <option value="81">Putaendo</option>
+	                    <option value="3">Putre</option>
+	                    <option value="265">Puyehue</option>
+	                    <option value="258">Queilén</option>
+	                    <option value="259">Quellón</option>
+	                    <option value="260">Quemchi</option>
+	                    <option value="172">Quilaco</option>
+	                    <option value="318">Quilicura</option>
+	                    <option value="173">Quilleco</option>
+	                    <option value="191">Quillón</option>
+	                    <option value="64">Quillota</option>
+	                    <option value="50">Quilpué</option>
+	                    <option value="261">Quinchao</option>
+	                    <option value="96">Quinta de Tilcoco</option>
+	                    <option value="319">Quinta Normal</option>
+	                    <option value="51">Quintero</option>
+	                    <option value="192">Quirihue</option>
+	                    <option value="83">Rancagua</option>
+	                    <option value="193">Ránquil</option>
+	                    <option value="133">Rauco</option>
+	                    <option value="320">Recoleta</option>
+	                    <option value="229">Renaico</option>
+	                    <option value="321">Renca</option>
+	                    <option value="97">Rengo</option>
+	                    <option value="98">Requínoa</option>
+	                    <option value="142">Retiro</option>
+	                    <option value="57">Rinconada</option>
+	                    <option value="346">Río Bueno</option>
+	                    <option value="123">Río Claro</option>
+	                    <option value="44">Río Hurtado</option>
+	                    <option value="282">Río Ibáñez</option>
+	                    <option value="266">Río Negro</option>
+	                    <option value="285">Río Verde</option>
+	                    <option value="134">Romeral</option>
+	                    <option value="215">Saavedra</option>
+	                    <option value="135">Sagrada Familia</option>
+	                    <option value="39">Salamanca</option>
+	                    <option value="71">San Antonio</option>
+	                    <option value="332">San Bernardo</option>
+	                    <option value="194">San Carlos</option>
+	                    <option value="124">San Clemente</option>
+	                    <option value="58">San Esteban</option>
+	                    <option value="195">San Fabián</option>
+	                    <option value="77">San Felipe</option>
+	                    <option value="106">San Fernando</option>
+	                    <option value="286">San Gregorio</option>
+	                    <option value="196">San Ignacio</option>
+	                    <option value="143">San Javier</option>
+	                    <option value="322">San Joaquín</option>
+	                    <option value="328">San José de Maipo</option>
+	                    <option value="267">San Juan de la Costa</option>
+	                    <option value="323">San Miguel</option>
+	                    <option value="197">San Nicolás</option>
+	                    <option value="268">San Pablo</option>
+	                    <option value="340">San Pedro</option>
+	                    <option value="18">San Pedro de Atacama</option>
+	                    <option value="153">San Pedro de la Paz</option>
+	                    <option value="125">San Rafael</option>
+	                    <option value="324">San Ramón</option>
+	                    <option value="174">San Rosendo</option>
+	                    <option value="99">San Vicente</option>
+	                    <option value="175">Santa Bárbara</option>
+	                    <option value="115">Santa Cruz</option>
+	                    <option value="154">Santa Juana</option>
+	                    <option value="82">Santa María</option>
+	                    <option value="294">Santiago</option>
+	                    <option value="76">Santo Domingo</option>
+	                    <option value="14">Sierra Gorda</option>
+	                    <option value="341">Talagante</option>
+	                    <option value="116">Talca</option>
+	                    <option value="155">Talcahuano</option>
+	                    <option value="15">Taltal</option>
+	                    <option value="200">Temuco</option>
+	                    <option value="136">Teno</option>
+	                    <option value="216">Teodoro Schmidt</option>
+	                    <option value="23">Tierra Amarilla</option>
+	                    <option value="331">Tiltil</option>
+	                    <option value="291">Timaukel</option>
+	                    <option value="164">Tirúa</option>
+	                    <option value="19">Tocopilla</option>
+	                    <option value="217">Toltén</option>
+	                    <option value="156">Tomé</option>
+	                    <option value="293">Torres del Paine</option>
+	                    <option value="280">Tortel</option>
+	                    <option value="230">Traiguén</option>
+	                    <option value="198">Treguaco</option>
+	                    <option value="176">Tucapel</option>
+	                    <option value="232">Valdivia</option>
+	                    <option value="26">Vallenar</option>
+	                    <option value="45">Valparaíso</option>
+	                    <option value="137">Vichuquén</option>
+	                    <option value="231">Victoria</option>
+	                    <option value="35">Vicuña</option>
+	                    <option value="218">Vilcún</option>
+	                    <option value="144">Villa Alegre</option>
+	                    <option value="52">Villa Alemana</option>
+	                    <option value="219">Villarrica</option>
+	                    <option value="53">Viña del Mar</option>
+	                    <option value="325">Vitacura</option>
+	                    <option value="145">Yerbas Buenas</option>
+	                    <option value="177">Yumbel</option>
+	                    <option value="199">Yungay</option>
+	                    <option value="63">Zapallar</option>
+	                </select>
+				</div>
+			</div>
+			<div class="step" id="step3">
+				<div class="number">
+					<span>3</span>
+				</div>
+				<div class="title">
+					<h1>Inspección</h1>
+				</div>
+			</div>
+			<div class="content">
+				<div class="alert alert-info">
+		            <div class="form">
+		                <p class="control-label">
+		                   Los vehículos usados requiren inspección. Indica la dirección para realizarla.
+		               </p>
+		                <label class="inspectradio">
+		                    <input value="1" type="radio" name="inspection">&nbspUsar dirección de residencia
+		                </label>
+		                <label class="inspectradio">
+		                    <input value="2" type="radio" name="inspection">&nbspIndicar otra dirección
+		                </label>
+		                <label class="inspectradio">
+		                    <input value="3" type="radio" name="inspection">&nbspIr a Sucursal
+		                </label>
+		            </div>
+		        </div>
+				<div class="inspectr2 col-xs-12 col-sm-6 col-md-6">
+				  <label for="usr">Calle:</label>
+				  <input type="text" class="form-control">
+				</div>
+				<div class="inspectr2 col-xs-12 col-sm-6 col-md-3">
+				  <label>Número:</label>
+				  <input type="text" class="form-control">
+				</div>
+				<div class="inspectr2 col-xs-12 col-sm-6 col-md-3">
+				  <label>Depto:</label>
+				  <input type="text" class="form-control" placeholder="Opcional">
+				</div>
+				<div class="inspectr2 col-xs-12 col-sm-12 col-md-6">
+					<br>
+					<label>Región</label>
+					<select class="form-control">
+						<option></option>
+						<option value="1">Arica y Parinacota</option>
+						<option value="2">Tarapacá</option>
+						<option value="3">Antofagasta</option>
+						<option value="4">Atacama</option>
+						<option value="5">Coquimbo</option>
+						<option value="6">Valparaíso</option>
+						<option value="7">Región Metropolitana</option>
+						<option value="8">O'Higgins</option>
+						<option value="9">Maule</option>
+						<option value="10">Biobío</option>
+						<option value="11">Araucanía</option>
+						<option value="12">Los Ríos</option>
+						<option value="13">Los Lagos</option>
+						<option value="14">Aysén</option>
+						<option value="15">Magallanes y  Antártica Chilena</option>
+					</select>
+				</div>
+				<div class="inspectr2 col-xs-12 col-sm-12 col-md-6">
+					<br>
+					<label>Comuna</label>
+					<select class="form-control">
+						<option></option>
+						<option value="1">Arica</option>
+						<option value="2">Camarones</option>
+						<option value="4">General Lagos</option>
+						<option value="3">Putre</option>
+					</select>
+				</div>
+				<div class="alert alert-warning col-xs-12 vert-offset-top">
+					<p class="control-label">
+				  Te contactaremos telefónicamente entre 3 y 48 horas hábiles para coordinar la inspección. Al momento de realizarla el auto debe estar limpio (para evitar que se declaren daños extras), debes tener las llaves y el padrón del vehículo u otro documento que acredite que eres el propietario.<br>
+				Los horarios de inspección son de lunes a viernes entre 9 y 19 horas y sábados entre 10 y 14 horas, domingos y festivos no se realizan inspecciones.
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="step" id="step4">
+			<div class="number">
+				<span>4</span>
+			</div>
+			<div class="title">
+				<h1>Pago</h1>
+			</div>
+		</div>
+		<div class="content">
+			<div class="row">
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<label>¿Quién paga el seguro?</label>
+					<select class="form-control">
+						<option disabled="" value=""></option>
+						<option value="owner">Dueño del vehículo</option>
+						<option value="company">Empresa</option>
+						<option value="other">Otro</option>
+					</select>
+				</div>
+			</div>
+			<div class="alert alert-info">
+	            <div class="form">
+	                <p class="control-label">
+	                   Medio de pago
+	               </p>
+	                <label class="pagoradio">
+	                    <input value="1" type="radio" name="pago">&nbsp;PAT - Pago automático con cargo en tarjeta de crédito
+	                </label>
+	                <label class="pagoradio">
+	                    <input value="2" type="radio" name="pago">&nbsp;PAC Electrónico - Pago automático con cargo en cuenta corriente (requiere inscripción electrónica en el sitio web del banco)
+	                </label>
+	                <label class="pagoradio">
+	                    <input value="3" type="radio" name="pago">&nbsp;Webpay - Pago anual a través de Webpay Plus
+	                </label>
+	            </div>
+	        </div>
+	        <div class="row">
+                <img class="img-responsive pull-right" src="http://i76.imgup.net/accepted_c22e0.png">
+	        </div>
+	        <div class="col-xs-10 col-sm-6 col-md-6 pagor1">
+				<br>
+				<label>Banco</label>
+				<select class="form-control">
+					<option disabled="" value=""></option>
+					<option value="1">ABN Amro Bank</option>
+					<option value="2">Banco Bice</option>
+					<option value="3">BBVA</option>
+					<option value="4">BCI</option>
+					<option value="5">Banco de Chile</option>
+					<option value="6">Banco de la Nación Argentina</option>
+					<option value="7">Banco Desarrollo</option>
+					<option value="8">BancoEstado</option>
+					<option value="9">Banco do Brasil</option>
+					<option value="10">Banco Falabella</option>
+					<option value="11">Banco Internacional</option>
+					<option value="12">Banco Itaú</option>
+					<option value="13">Banco Monex</option>
+					<option value="14">Banco París</option>
+					<option value="15">Banco Penta</option>
+					<option value="16">Banco Ripley</option>
+					<option value="17">Banco Santander</option>
+					<option value="18">Banco Security</option>
+					<option value="19">Bank of Tokyo-Mitsubishi</option>
+					<option value="20">Banco Edwards Citi</option>
+					<option value="21">Corpbanca</option>
+					<option value="22">Deutsche Bank</option>
+					<option value="23">HNS Banco</option>
+					<option value="24">HSBC Bank</option>
+					<option value="25">JP Morgan Chase Bank</option>
+					<option value="26">Scotiabank Sud Americano</option>
+				</select>
+			</div>
+			<div class="col-xs-10 col-sm-6 col-md-6 pagor1">
+				<br>
+                <label>CARD NUMBER</label>
+                <div class="input-group" style="margin-top: 0px;">
+                    <input type="text" class="form-control" id="cardNumber" placeholder="Valid Card Number" required="" autofocus="">
+                    <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+                </div>
+			</div>
+			<div class="col-xs-10 col-sm-6 col-md-6 pagor1 pagor2">
+				<br>
+				<label>Fecha de vencimiento</label>
+				<div class="col-xs-12 col-sm-6 col-md-6" style="margin-top: 0px;padding-left: 0px!important">
+					<select class="form-control">
+						<option disabled="" value="">Mes</option>
+						<option value="1">01</option>
+						<option value="2">02</option>
+						<option value="3">03</option>
+						<option value="4">04</option>
+						<option value="5">05</option>
+						<option value="6">06</option>
+						<option value="7">07</option>
+						<option value="8">08</option>
+						<option value="9">09</option>
+						<option value="10">10</option>
+						<option value="11">11</option>
+						<option value="12">12</option>
+					</select>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-6" style="margin-top: 0px;padding-left: 0px!important">
+					<select class="form-control">
+						<option disabled="" value="">Año</option>
+						<option value="2017">2017</option>
+						<option value="2018">2018</option>
+						<option value="2019">2019</option>
+						<option value="2020">2020</option>
+						<option value="2021">2021</option>
+						<option value="2022">2022</option>
+						<option value="2023">2023</option>
+						<option value="2024">2024</option>
+						<option value="2025">2025</option>
+						<option value="2026">2026</option>
+						<option value="2027">2027</option>
+						<option value="2028">2028</option>
+						<option value="2029">2029</option>
+						<option value="2030">2030</option>
+						<option value="2031">2031</option>
+						<option value="2032">2032</option>
+						<option value="2033">2033</option>
+						<option value="2034">2034</option>
+						<option value="2035">2035</option>
+						<option value="2036">2036</option>
+					</select>
+				</div>
+			</div>
+			<div class="col-xs-10 col-sm-6 col-md-6 pagor1">
+				<br>
+				<div div class="col-xs-12 col-sm-6 col-md-6" style="margin-top: 0px !important;padding-left: 0px!important">
+					<label>Cuotas</label>
+					<div class="col-xs-12 col-sm-12 col-md-12" style="margin-top: 0px !important;padding-left: 0px!important">
+						<select class="form-control">
+							<option disabled="" value=""></option>
+							<option value="1">01</option>
+							<option value="2">02</option>
+							<option value="3">03</option>
+							<option value="4">04</option>
+							<option value="5">05</option>
+							<option value="6">06</option>
+							<option value="7">07</option>
+							<option value="8">08</option>
+							<option value="9">09</option>
+							<option value="10">10</option>
+							<option value="11">11</option>
+							<option value="12">12</option>
+						</select>
+					</div>
+				</div>
+				<div div class="col-xs-12 col-sm-6 col-md-6" style="margin-top: 0px !important;padding-left: 0px !important;">
+					<label>Día de pago</label>
+					<div class="col-xs-12 col-sm-12 col-md-12" style="margin-top: 0px !important;padding-left: 0px!important">
+						<select class="form-control">
+							<option disabled="" value=""></option>
+							<option value="15">15</option>
+						</select>
+					</div>
+				</div>
+			</div>
+
+			<div class="alert alert-warning col-xs-12 vert-offset-top pagorr1" style="display: none">
+				<p class="control-label">
+			  El cargo de la primera cuota se realizará en tu tarjeta de crédito en un plazo máximo de 72 horas hábiles, luego de que te enviemos el certificado de póliza.
+				</p>
+			</div>
+
+			<div class="alert alert-warning col-xs-12 vert-offset-top pagorr2" style="display: none">
+				<p class="control-label">
+				Recuerda inscribir el pago de cuenta automático en tu banco, utilizando el siguiente ID de venta: 270630
+				<br>
+				<br>
+				<a href="#">¿Cómo inscribo el PAC electrónico?</a>
+				<br>
+				<br>
+				El primer cobro del seguro se realizará en un <strong>máximo de 72 horas hábiles</strong>, luego de que te enviemos el certificado de póliza
+				</p>
+			</div>
+
+			<div class="alert alert-warning col-xs-12 vert-offset-top pagorr3" style="display: none">
+				<p class="control-label">
+			  Una vez aprobada la inspección de tu vehículo, te enviaremos un correo con el link de pago que te llevará a Webpay. Desde este link existe la posibilidad de pagar en cuotas al seleccionar pago con tarjeta de crédito, o también podrás pagar el total del seguro utilizado Redcompra.
+				</p>
+			</div>
+		</div>
+		<form action="#" onsubmit="if(document.getElementById('agree').checked) { return true; } else { alert('Please indicate that you have read and agree to the Terms and Conditions and Privacy Policy'); return false; }">
+			<input type="checkbox" name="checkbox" style="margin-left: 20px;" value="check" id="agree" /> I have read and agree to the Terms and Conditions and Privacy Policy
+			<input type="submit" class="continue" value="Continuar" />
+		</form>
+		<!-- <div class="col-md-8">
+			<input type="checkbox" name="check"style="margin-left: 20px;"><span for="check">&nbsp&nbspAceptar términos y condiciones</span>
+		</div>
+		<a class="continue" href="#">Continuar</a> -->
+	</div>
+</body>
+
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+
+	$( document ).ready(function() {
+	    // $(".vehicle div:not(:first)").css('display','none');
+	});
+
+	// $("#patente").on("input", function() {
+	// 	var patente = $(this).val();
+	// 	if(patente.length == 6) {
+	// 		$(".vehicle div:not(:first)").css('display','block');
+	// 	} else {
+	// 		$(".vehicle div:not(:first)").css('display','none');
+	// 	}
+	// });
+	$('a[rel=popover]').popover({
+	  html: true,
+	  trigger: 'hover',
+	  placement: 'bottom',
+	  content: function(){return '<img src="'+$(this).data('img') + '" />';}
+	});
+
+	$("#selyes").on('change', function() {
+		if($(this).val() == 2) {
+			$("#forselyes").removeClass('hidden');
+		} else {
+			$("#forselyes").addClass('hidden');
+		}
+	});
+
+	$("#withpatente").on('change', function() {
+		if($(this).prop('checked')) {
+			$(".forpatente").removeClass('hidden');
+		} else {
+			$(".forpatente").addClass('hidden');
+		}
+	});
+
+	$(".inspectradio input").on('change', function() {
+		if($(this).val() == 1) {
+			$('.inspectr2').css('display', 'none');
+		} else {
+			$('.inspectr2').css('display', 'block');
+		}
+	});
+
+	$('#region').change(function() {
+        if ($(this).data('options') === undefined) {
+            /*Taking an array of all options-2 and kind of embedding it on the select1*/
+            $(this).data('options', $('#commune option').clone());
+        }
+
+        var id = $(this).val();
+        
+        var listsbyId = [
+        [1,4],[5,11],[12,20],[21,29],[30,44],[45,82],[294,345],[83,115],[116,145],[146,199],[200,231],[232,242],[243,272],[273,282],[283,293]];
+        var options = [];
+        for(var i = listsbyId[id-1][0]; i <= listsbyId[id-1][1]; i++) {
+            for(var j = 0; j < $(this).data('options').length; j++) {
+                if ($(this).data('options')[j].value == i) {
+                    options +=  "<option value=" + $(this).data('options')[j].value + ">" + $(this).data('options')[j].text + "</option>";
+                }
+            }
+        }
+        if (id == 12) {
+            options +=  "<option value=346>Río Bueno</option>";
+        }
+        $('#commune').html(options);
+    });
+
+	$(".pagoradio input").on('change', function() {
+		if($(this).val() == 1) {
+			$('.pagor1').css('display', 'block');
+			$('.pagorr1').css('display', 'block');
+			$('.pagorr2').css('display', 'none');
+			$('.pagorr3').css('display', 'none');
+		} else if($(this).val() == 2){
+			$('.pagor1').css('display', 'block');
+			$('.pagor2').css('display', 'none');
+			$('.pagorr1').css('display', 'none');
+			$('.pagorr2').css('display', 'block');
+			$('.pagorr3').css('display', 'none');
+		} else {
+			$('.pagor1').css('display', 'none');
+			$('.pagor2').css('display', 'none');
+			$('.pagorr1').css('display', 'none');
+			$('.pagorr2').css('display', 'none');
+			$('.pagorr3').css('display', 'block');
+		}
+	});
+</script>
+
+</html>

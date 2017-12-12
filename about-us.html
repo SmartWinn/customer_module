@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Seguros Empresas</title>
+    
+    <!-- core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="libs/no-ui-slider/jquery.nouislider.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.2/css/bootstrap-select.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/0.8.2/css/flag-icon.min.css">
+    
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Signika:300,400,600,700" />
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+
+    <style type="text/css">
+        body > div.container > div > article > div li{
+            list-style: none;
+        }
+        body > div.container > div > article > div ul{
+            padding-left: 10px;
+        }
+    </style>
+
+</head><!--/head-->
+
+<body class="homepage">
+
+    <header id="header">
+      <div class="top-bar">
+            <div class="container"  style="width: 100%;">
+                <div class="row">
+                    <div class="col-sm-6 col-xs-5">
+                        <div class="top-number">
+                            <span><i class="fa fa-phone-square"></i>  +5694 233 2502</span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                            <span id="open_chat"><i class="fa fa-comments-o"></i>chat en línea</span>
+                        </div>
+                    </div>
+                    
+                    <div class="col-sm-6 col-xs-7">
+                       <div class="social">
+                            <ul class="social-share">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li> 
+                                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                                <li><a href="#"><i class="fa fa-skype"></i></a></li>
+                            </ul>
+                            <div class="search">
+                                <form role="form">
+                                    <input type="text" class="search-form" autocomplete="off" placeholder="Search">
+                                    <i class="fa fa-search"></i>
+                                </form>
+                           </div>
+                           
+                       </div>
+                    </div>
+                </div>
+            </div><!--/.container-->
+        </div><!--/.top-bar-->
+
+        <nav class="navbar navbar-inverse" id="navigation-top" role="banner">
+            <div class="container" style="width: 100%;">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
+                </div>
+                
+                <div class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li class="active option"><a href="index.html">Inicio</a></li>
+                        <!-- <li><a href="about-us.html">About Us</a></li> -->
+                        <li class="option" ><a href="#">Sobre Espacio Seguro</a></li>
+                        <!-- <li><a href="portfolio.html">Portfolio</a></li> -->
+                        <li class="option" ><a href="#feature">Servicios</a></li>
+                        <!-- <li><a href="portfolio.html">Portfolio</a></li> -->
+                        <li class="option dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Empresas<i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Seguros Empresas</a></li>
+                                <li><a href="#">Trabaja con Nosotros</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contact-us.html">Contáctanos</a></li> 
+                        <!-- <li><a href="contact-us.html">Contact</a></li>     -->
+                        <li>
+                            <button type="button" class="btn btn-info ">
+                                <span class="ladda-label"><i class="fa fa-users"></i>&nbsp&nbsp&nbspClientes en Línea</span>
+                            </button>
+                        </li>
+                        <li class="dropdown">
+                            <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">
+                                <span class="ladda-label"><i class="fa fa-building-o"></i>&nbsp&nbsp&nbspOficina Virtual</span>
+                            </button>
+                                <ul class="dropdown-menu">
+                                <li><a href="#">Corredores y otros</a></li>
+                                <li><a href="#">Colaboradores</a></li>
+                            </ul>
+                        </li>        
+                        <!-- <li>
+                            <button type="button" class="btn phone-number">
+                                <span><i class="fa fa-phone" style="color: #5cb85c;font-size: 18px;"></i>
+                                  +0123 456 70 90</span>
+                            </button>
+                        </li>   
+                        <li>
+                            <button type="button" class="btn phone-number">
+                                <span><i class="fa fa-comments-o" style="color: #5cb85c;font-size: 22px;"></i>
+                                  chat en lÃƒÂ­nea</span>
+                            </button>
+                        </li>      -->      
+                    </ul>
+                </div>
+            </div><!--/.container-->
+        </nav><!--/nav-->
+        
+    </header><!--/header-->
+
+
+        <!-- container -->
+    <div class="container" style="margin-top: 50px;">
+
+        <ol class="breadcrumb">
+            <li><a href="index.html">Inicio</a></li>
+            <li class="active">Acerca de</li>
+        </ol>
+
+        <div class="row">
+            
+            <!-- Article main content -->
+            <article class="col-sm-8 maincontent">
+                <header class="page-header">
+                    <h1 class="page-title">Empresas</h1>
+                </header>
+                <div class="col-md-12">
+                    <div class="row">
+                        <p><img src="images/business.jpg" alt="" class="img-rounded pull-right" width="300" >Espacio Seguro ofrece una amplia gama de coberturas para tu empresa, tu maquinaria, mercadería, flota de vehículos, responsabilidad civil, entre otros.</p>
+                        <p>Desarrollamos programas de acuerdo a las necesidades de nuestros clientes y entregamos productos personalizados.</p>
+                        <p>Hoy somos una de las grandes operadoras en el segmento grandes empresas y entre nuestros clientes destacan empresas del sector minero, la construcción, el área forestal, el rubro manufacturero y bancario.</p>
+                        <p>Nuestros productos incluyen:</p>
+                    </div>
+                    <div class="row">
+                        <p><strong>Seguros automotrices para vehículos de uso comercial</strong></p>
+                        <p>
+                        </p><div class="col-md-12 seguros">
+                            <ul>
+                             <li><i class="fa fa-caret-right"></i>Flotas de vehículos pesados</li>
+                             <li><i class="fa fa-caret-right"></i>Transporte colectivo</li>
+                             <li><i class="fa fa-caret-right"></i>Livianos comerciales</li>
+                            </ul>
+                        </div>  
+                        <p></p>
+                        <p><strong>Seguros Empresas</strong></p>
+                        <p>
+                        </p><div class="col-md-12 seguros">
+                            <ul>
+                                 <li><i class="fa fa-caret-right"></i>Incendios y adicionales</li>
+                                 <li><i class="fa fa-caret-right"></i>Pyme</li>
+                                 <li><i class="fa fa-caret-right"></i>Perjuicios por paralización</li>
+                                 <li><i class="fa fa-caret-right"></i>Robo</li>
+                                 <li><i class="fa fa-caret-right"></i>Responsabilidad Civil (Empresa, internacional y construcción)</li>
+                                 <li><i class="fa fa-caret-right"></i>Accidentes Personales Colectivos</li>
+                            </ul>
+                        </div>  
+                        <p></p>
+                        <p><strong>Seguros de Ingeniería</strong></p>
+                        <p>
+                        </p><div class="col-md-12 seguros">
+                            <ul>
+                                 <li><i class="fa fa-caret-right"></i>Equipo Móvil Contratista</li>
+                                 <li><i class="fa fa-caret-right"></i>Equipo Móvil Agrícola</li>
+                                 <li><i class="fa fa-caret-right"></i>Avería de Maquinaria</li>
+                                 <li><i class="fa fa-caret-right"></i>Equipos Electrónicos</li>
+                                 <li><i class="fa fa-caret-right"></i>Todo Riesgo Construcción</li>
+                                 <li><i class="fa fa-caret-right"></i>Todo Riesgo Montaje</li>
+                            </ul>
+                        </div>  
+                        <p></p>
+                        <p><strong>Transporte</strong></p>
+                        <p>
+                        </p><div class="col-md-12 seguros">
+                            <ul>
+                                 <li><i class="fa fa-caret-right"></i>Terrestre</li>
+                                 <li><i class="fa fa-caret-right"></i>Marítimo</li>
+                                 <li><i class="fa fa-caret-right"></i>Aéreo</li>
+                            </ul>
+                        </div>
+                        <p></p>
+                        <p><strong>Seguros para Cascos Marítimo</strong></p>
+                        <p>
+                        </p><div class="col-md-12 seguros">
+                            <ul>
+                                 <li><i class="fa fa-caret-right"></i>Casco general</li>
+                                 <li><i class="fa fa-caret-right"></i>Pesqueros artesanales</li>
+                            </ul>
+                        </div>  
+                        <p></p>
+                        <p>
+                        </p><div class="col-md-12">
+                            <div class="row">
+                                <div class="col-md-12 destacado">
+                                Contacta a tu corredor y cotiza, conoce las condiciones del producto y obtén tu póliza.
+                                </div>
+                            </div>  
+                        </div>      
+                        <p></p>
+                                
+                        
+                    </div>
+                </div>
+                
+            </article>
+            <!-- /Article -->
+            
+            <!-- Sidebar -->
+            <aside class="col-sm-4 sidebar sidebar-right">
+
+                <div class="widget">
+                    <h4>Información de Contacto</h4>
+                    <ul class="list-unstyled list-spaces">
+                        <li><a href="">Contáctenos:</a><br><span class="small text-muted">Clientes EspacioSeguro: 600 000 000 </span></li>
+                        <li><a href="">o desde celulares al </a><br><span class="small text-muted">2 2392 2250.</span></li>
+                        <li><a href="">Y accede a los diferentes servicios que tenemos para ti:</a><br><span class="small text-muted">
+                            •   Denuncia siniestros.<br>
+                            •   Consulta información general de la Compañía.(*)<br>
+                            •   Consulta de pólizas y/o endosos.(*)<br>
+                            •   Solicita servicios de asistencia contratados.(*)<br>
+                            •   Ayuda para registro y pago de primas vía web.(*)</span></li>
+                    </ul>
+                </div>
+
+            </aside>
+            <!-- /Sidebar -->
+
+        </div>
+    </div>  <!-- /container -->
+
+    <section id="bottom">
+          
+        <div class="container wow fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+            <div class="row">
+                <div class="col-md-4 col-sm-4">
+                    <div class="widget">
+                        <h3>Compañia</h3>
+                        <ul>
+                            <li><a href="contact-us.html">Sobre EspacioSeguro</a></li>
+                            <li><a href="#">Servicios</a></li>
+                            <li><a href="#">Empresas</a></li>
+                            <li><a href="#">Seguros Empresas</a></li>
+                            <li><a href="#">Trabaja con Nosotros</a></li>
+                            <li><a href="#">Contáctanos</a></li>
+                        </ul>
+                    </div>    
+                </div><!--/.col-md-4-->
+
+                <div class="col-md-4 col-sm-4">
+                    <div class="widget">
+                        <h3>Nuestras Alianzas</h3>
+                        <ul>
+                            <li><a href="http://www.liberty.cl">Liberty</a></li>
+                        </ul>
+                    </div>    
+                </div><!--/.col-md-4-->
+
+                <div class="col-md-4 col-sm-4">
+                    <div class="widget">
+                        <h3>Información</h3>
+                        <ul>
+                            <li><a href="http://www.svs.cl/portal/principal/605/w3-channel.html">Superintendencia de valores y seguros</a></li>
+                            <li><a href="#">Contratación Voluntaria</a></li>
+                            <li><a href="http://www.ddachile.cl/v5/Inicio.aspx ">Defensor del Asegurado</a></li>
+                        </ul>
+                    </div>    
+                </div><!--/.col-md-4-->
+
+            </div>
+        </div>
+    </section><!--/#bottom-->
+
+    <footer id="footer" class="midnight-blue">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-2">
+                    &copy; 2017 <a target="_blank" href="#" title="Free Twitter Bootstrap WordPress Themes and HTML templates">EspacioSeguro SPA</a>. All Rights Reserved.
+                </div>
+                <div class="col-sm-10">
+                    <ul class="pull-right">
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Sobre Espacio Seguro</a></li>
+                        <li><a href="#">Legal</a></li>
+                        <li><a href="#">Contáctanos</a></li>
+                    </ul>
+                    <select class="selectpicker" data-width="fit">
+                              <option data-content='<span class="flag-icon flag-icon-us"></span> English'>English</option>
+                              <option  data-content='<span class="flag-icon flag-icon-mx"></span> Español'>Español</option>
+                            </select>
+                </div>
+            </div>
+        </div>
+        
+    </footer><!--/#footer-->
+    <div class="chat_window">
+        <div class="top_menu">
+            <div class="buttons">
+                <div class="button minimize"></div>
+                <div class="button close"></div>
+            </div>
+            <div class="title">Chat</div>
+        </div>
+        <div class="userinfo">
+           <form data-toggle="" id="form" role="form">
+              <div class="form-group">
+                <label for="inputName" class="control-label">Nombre</label>
+                <input type="text" class="form-control" id="inputName" placeholder="Cina Saffary" required>
+              </div>
+              <div class="form-group">
+                <label for="inputphone" class="control-label">Telefono</label>
+                <input type="tel" class="form-control" id="inputphone" pattern="^\d{4}-\d{3}-\d{4}$" placeholder="56XX-XXX-XXXX" required>
+              </div>
+              <div class="form-group">
+                <label for="inputEmail" class="control-label">Email</label>
+                <input type="email" class="form-control" id="inputEmail" placeholder="Email" data-error="Bruh, that email address is invalid" required>
+                <div class="help-block with-errors"></div>
+              </div>
+              <div class="form-group">
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+            </form>
+        </div>
+
+        <ul class="messages chatcontent">
+        </ul>
+        
+        <div class="bottom_wrapper clearfix chatcontent">
+            <div class="message_input_wrapper">
+                <input class="message_input" style="font-size: small" placeholder="Type your message here..." />
+            </div>
+            <div class="send_message">
+                <div class="icon"></div>
+                <div class="text" style="font-size: small">Send</div>
+            </div>
+        </div>
+    </div>
+    <div class="message_template">
+            <li class="message">
+                <div class="avatar">
+                </div>
+                <div class="text_wrapper">
+                    <div class="text"></div>
+                </div>
+            </li>
+    </div>
+    </div>
+    <script src="js/jquery.js"></script>
+    <!-- <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script> -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/validator.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="libs/no-ui-slider/jquery.nouislider.all.min.js"></script>
+    <script src="libs/parallax.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.2/js/bootstrap-select.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+    var Message;
+    Message = function (arg) {
+        this.text = arg.text, this.message_side = arg.message_side;
+        this.draw = function (_this) {
+            return function () {
+                var $message;
+                $message = $($('.message_template').clone().html());
+                $message.addClass(_this.message_side).find('.text').html(_this.text);
+                $('.messages').append($message);
+                return setTimeout(function () {
+                    return $message.addClass('appeared');
+                }, 0);
+            };
+        }(this);
+        return this;
+    };
+    $(function () {
+        var chatEnable = 0;
+        var getMessageText, message_side, sendMessage;
+        message_side = 'right';
+        getMessageText = function () {
+            var $message_input;
+            $message_input = $('.message_input');
+            return $message_input.val();
+        };
+        sendMessage = function (text) {
+            var $messages, message;
+            if (text.trim() === '') {
+                return;
+            }
+            $('.message_input').val('');
+            $messages = $('.messages');
+            message_side = message_side === 'left' ? 'right' : 'left';
+            message = new Message({
+                text: text,
+                message_side: message_side
+            });
+            message.draw();
+            return $messages.animate({ scrollTop: $messages.prop('scrollHeight') }, 300);
+        };
+        $('.minimize').click(function() {
+            $('#open_chat').click();
+        });
+        $('.close').click(function() {
+            // body...
+            // alert('aa');
+            // $(".chat_window").toggle(function () { $(this).animate({ height: "300px" }, 200); });
+            // $('#form').toggle();
+            if($(".messages").css("display") == 'block'){
+                $(".chat_window").css('height','57px');
+            } else {
+                if(chatEnable == 1) {
+                    $(".chat_window").css('height', '450px');
+                } else {
+                    $(".chat_window").css('height', '360px');
+                }
+            }
+            $(".chatcontent").toggle();
+            
+        });
+        $('.send_message').click(function (e) {
+            return sendMessage(getMessageText());
+        });
+        $('.message_input').keyup(function (e) {
+            if (e.which === 13) {
+                return sendMessage(getMessageText());
+            }
+        });
+        $('#form').validator().on('submit', function (e) {
+            e.preventDefault();
+            chatEnable = 1;
+            $('#form').css("display", "none");
+            var name = $("#inputName").val();
+            sendMessage('Hi ' + name + ',\n   How can I help you today? Regards, Insurance Doctor Support :)');
+            $(".message_input").prop("disabled", false);
+            $(".chat_window").css('height', '450px');
+        })
+        //sendMessage('Hi There,\n   How can I help you today? Regards, Insurance Doctor Support :)');
+        // setTimeout(function () {
+        //     return sendMessage('Hi Sandy! How are you?');
+        // }, 1000);
+        // return setTimeout(function () {
+        //     return sendMessage('I\'m fine, thank you!');
+        // }, 2000);
+        $(".chat_window").css('height', '360px');
+        $(".chatcontent").css('position', 'relative');
+
+        $(".message_input").prop("disabled", true);
+        // $('.messages').css("display", "none");
+        // $('#form').css("display", "block");
+        $('.navbar-toggle').click(function (e) {
+            $('.btn-circle').toggleClass('btn-primary-outline');
+        });
+
+        $(".navbar a").on('click', function(event) {
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 900, function(){
+       
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+
+        $(document).on('click', '#open_chat', function () {
+            if ( $('.chat_window').css('display') == 'none' )
+                $('.chat_window').css('display','block');
+            else
+                $('.chat_window').css('display','none');
+            return false;
+        });
+
+        $('ul.dropdown-menu [data-toggle=dropdown]').on('click', function(event) {
+            event.preventDefault(); 
+            event.stopPropagation(); 
+            $(this).parent().siblings().removeClass('open');
+            $(this).parent().toggleClass('open');
+        });
+
+        $('.selectpicker').selectpicker();
+
+    });
+}.call(this));
+    </script>
+</body>
+</html>

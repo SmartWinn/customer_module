@@ -1,0 +1,49 @@
+.product {    
+	margin-top: 2%;
+    border-radius: 10px;
+    background-color: #eee;
+}
+
+.homepage {
+	background-color: #eee;
+}
+
+.step2 .form-group {
+	height: 98px;
+	padding-left: 5px;
+}
+
+.step2 .form-group label{
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	display: block;
+}
+
+.form-group select {
+	width: 100% !important;
+}
+
+.backbar {
+    padding: 50px 50px 0px 5px;
+	width: 100%;
+    height: 300px;
+    background-image: url(../images/services/online.png);
+    background-position: 68% 30%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.backbar .row {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    max-width: 60em;
+    color: white;
+}
+
+.backbar h1 {
+	color: white;
+}

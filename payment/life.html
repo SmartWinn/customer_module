@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Get Products</title>
+    
+    <!-- core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap-datetimepicker.css">
+    <link href="../css/animate.min.css" rel="stylesheet">
+    <link href="../css/prettyPhoto.css" rel="stylesheet">
+    <link href="../css/main.css" rel="stylesheet">
+    <link href="../css/responsive.css" rel="stylesheet">
+    <!-- <link href="../css/responsive_auto.css" rel="stylesheet"> -->
+    <link href="../css/form_auto.css" rel="stylesheet">
+    <link href="../css/quote.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->       
+    <link rel="shortcut icon" href="../images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../images/ico/apple-touch-icon-57-precomposed.png">
+</head><!--/head-->
+<style type="text/css">
+    .tabladps tr {
+        border: 1px solid grey;
+    }
+    .tabladps td {
+        padding-left: 5px;
+    }
+    .tabladps {
+        width: 80%;
+        margin: 10px auto;
+    }
+    .btn-primary {
+        background: #5cb85c;
+    }
+</style>
+<body class="homepage" style="background-color: #5bc0de;">
+
+    <header id="header">
+      <div class="top-bar ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-xs-5">
+                        <div class="top-number">
+                            <span><i class="fa fa-phone-square"></i>  +5694 233 2502</span>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                            <span id="open_chat"><i class="fa fa-comments-o"></i>chat en línea</span>
+                        </div>
+                    </div>
+                    
+                    <div class="col-sm-6 col-xs-7">
+                       <div class="social">
+                            <ul class="social-share">
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li> 
+                                <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                                <li><a href="#"><i class="fa fa-skype"></i></a></li>
+                            </ul>
+                            <div class="search">
+                                <form role="form">
+                                    <input type="text" class="search-form" autocomplete="off" placeholder="Search">
+                                    <i class="fa fa-search"></i>
+                                </form>
+                           </div>
+                           
+                       </div>
+                    </div>
+                </div>
+            </div><!--/.container-->
+        </div><!--/.top-bar-->
+
+        <nav class="navbar navbar-inverse" id="navigation-top" role="banner">
+            <div class="container" style="width: 100%;">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="../images/logo.png" alt="logo"></a>
+                </div>
+                
+                <div class="collapse navbar-collapse navbar-right">
+                    <ul class="nav navbar-nav">
+                        <li class="active option"><a href="../index.html">Inicio</a></li>
+                        <!-- <li><a href="about-us.html">About Us</a></li> -->
+                        <li class="option" ><a href="#">Sobre Espacio Seguro</a></li>
+                        <!-- <li><a href="portfolio.html">Portfolio</a></li> -->
+                        <li class="option" ><a href="#feature">Servicios</a></li>
+                        <!-- <li><a href="portfolio.html">Portfolio</a></li> -->
+                        <li class="option dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Empresas<i class="fa fa-angle-down"></i></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="../about-us.html">Seguros Empresas</a></li>
+                                <li><a href="#">Trabaja con Nosotros</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../contact-us.html">Contáctanos</a></li> 
+                        <!-- <li><a href="contact-us.html">Contact</a></li>     -->
+                        <li>
+                            <button type="button" class="btn btn-info ">
+                                <span class="ladda-label"><i class="fa fa-users"></i>&nbsp&nbsp&nbspClientes en Línea</span>
+                            </button>
+                        </li>
+                        <li class="dropdown">
+                            <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">
+                                <span class="ladda-label"><i class="fa fa-building-o"></i>&nbsp&nbsp&nbspOficina Virtual</span>
+                            </button>
+                                <ul class="dropdown-menu">
+                                <li><a href="#">Corredores y otros</a></li>
+                                <li><a href="#">Colaboradores</a></li>
+                            </ul>
+                        </li>        
+                        <!-- <li>
+                            <button type="button" class="btn phone-number">
+                                <span><i class="fa fa-phone" style="color: #5cb85c;font-size: 18px;"></i>
+                                  +0123 456 70 90</span>
+                            </button>
+                        </li>   
+                        <li>
+                            <button type="button" class="btn phone-number">
+                                <span><i class="fa fa-comments-o" style="color: #5cb85c;font-size: 22px;"></i>
+                                  chat en lÃƒÂ­nea</span>
+                            </button>
+                        </li>      -->      
+                    </ul>
+                </div>
+            </div><!--/.container-->
+        </nav><!--/nav-->
+        
+    </header><!--/header--> 
+    <div class="container product">
+        <header class="product-header">
+            <h1 class="product-header-title">Seguro De Vida Con Bonificación</h1>
+            <p class="product-header-lead">Datos del Asegurado</p>
+        </header>
+        <div class="step2">
+            <form class="form-inline" role="form" action="../filter/index.html">
+              <div class="form-group col-xs-12 col-sm-3 col-md-3">
+                <label for="rutNumber" class="control-label">RUT</label>
+                <input type="text" class="form-control" id="rutNumber" title="rut chilean" pattern="\d{3,8}-[\d|kK]{1}" data-error="invalid RUT" required>
+                <div class="help-block with-errors"></div>
+              </div>
+              <div class="form-group col-xs-12 col-sm-3 col-md-3">
+                <label for="rutNumber" class="control-label">Email</label>
+                <input type="email" class="form-control" data-error="invalid Email" required>
+                <div class="help-block with-errors"></div>
+              </div>
+              <div class="form-group col-xs-12 col-sm-3 col-md-3">
+                <label for="birthdaypicker" class="control-label">Fecha de nacimiento</label>
+                <div class='input-group date' id='birthdaypicker'>
+                    <input type='text' class="form-control" required/>
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+                <div class="help-block with-errors"></div>
+              </div>
+              <div class="form-group col-xs-12 col-sm-3 col-md-3">
+                <label for="rutNumber" class="control-label">Teléfono</label>
+                <input type="text" class="form-control" data-error="invalid Telefono" required>
+                <div class="help-block with-errors"></div>
+              </div>
+              <div class="form-group col-xs-12 col-sm-3 col-md-3">
+                <label for="rutNumber" class="control-label">Compania</label>
+                <input type="text" class="form-control" required>
+                <div class="help-block with-errors"></div>
+              </div>
+              <div class="form-group col-xs-12 col-sm-3 col-md-3">
+                <label for="rutNumber" class="control-label">Producto</label>
+                <input type="text" class="form-control" required>
+                <div class="help-block with-errors"></div>
+              </div>
+              <div class="form-group col-xs-12 col-sm-3 col-md-3">
+                <label for="rutNumber" class="control-label">Prima</label>
+                <input type="text" class="form-control" required>
+                <div class="help-block with-errors"></div>
+              </div>
+              <div class="form-group col-xs-12 col-sm-3 col-md-3">
+                <label for="rutNumber" class="control-label">Plan</label>
+                <input type="text" class="form-control" required>
+                <div class="help-block with-errors"></div>
+              </div>
+              <h3>Completa los datos a continuación de la Declaración Personal de Salud</h3>
+              <div class="container survey">
+                    
+                    <p>EXCLUSIÓN DE COBERTURA POR ENFERMEDADES PREEXISTENTES.</p>
+                    <span>La exclusión de cobertura contenida en las condiciones particulares de la póliza Nº 752 (planes a 3 años) y póliza Nº 756 (planes a 5 años) POL 2 2013 1295 (planes a 3 y 5 años) corresponde a enfermedades, dolencias o situaciones de salud diagnosticadas o conocidas por el proponente antes de la contratación del seguro, en consecuencia, le solicitamos responder si usted tiene, tuvo o se encuentra en tratamiento de las siguientes enfermedades, dolencias o situaciones de salud:</span><br>
+                    <span>En la columna que corresponda, responda con la palabra "Si" al lado de las enfermedades, dolencias o situaciones de salud que usted tiene, tuvo o se encuentra en tratamiento:</span>
+                    <table class="tabladps" cellpadding="0" cellspacing="0">
+                        <tbody>
+                            <tr>
+                                <th>Enfermedades, dolencias o situaciones de salud</th>
+                                <th colspan="4"> ¿Usted tiene, se encuentra en tratamiento o tuvo?</th>
+                            </tr>
+                            <tr>
+                                <th></th><th colspan="2">Si</th><th colspan="2">No</th>
+                            </tr>
+                            <tr>
+                                <td class="izquierda">Cáncer</td><td colspan="2"><input name="cancer" type="radio" value="si"></td><td colspan="2"><input name="cancer" type="radio" value="no"></td>
+                            </tr>
+                            <tr>
+                                <td class="izquierda">Leucemia</td><td colspan="2"><input name="leucemia" type="radio" value="si"></td><td colspan="2"><input name="leucemia" type="radio" value="no"></td>
+                            </tr>
+                            <tr>
+                                <td class="izquierda">Cirrosis Hepática</td><td colspan="2"><input name="cirrosis" type="radio" value="si"></td><td colspan="2"><input name="cirrosis" type="radio" value="no"></td>
+                            </tr>
+                            <tr>
+                                <td class="izquierda">Diabetes Mellitus</td><td colspan="2"><input name="diabetes" type="radio" value="si"></td><td colspan="2"><input name="diabetes" type="radio" value="no"></td>
+                            </tr>
+                            <tr>
+                                <td class="izquierda">Enfermedades Pulmonares Crónicas (Enfisema, Fibrosis Quística)</td><td colspan="2"><input name="pulmonares" type="radio" value="si"></td><td colspan="2"><input name="pulmonares" type="radio" value="no"></td>
+                            </tr>
+                            <tr>
+                                <td class="izquierda">Hemorragia Cerebral</td><td colspan="2"><input name="hemorragiacerebral" type="radio" value="si"></td><td colspan="2"><input name="hemorragiacerebral" type="radio" value="no"></td>
+                            </tr>
+                            <tr>
+                                <td class="izquierda">Infarto al Miocardio</td><td colspan="2"><input name="infarto" type="radio" value="si"></td><td colspan="2"><input name="infarto" type="radio" value="no"></td>
+                            </tr>
+                            <tr>
+                                <td class="izquierda">Insufuciencia Renal Crónica</td><td colspan="2"><input name="irenal" type="radio" value="si"></td><td colspan="2"><input name="irenal" type="radio" value="no"></td>
+                            </tr>
+                            <tr>
+                                <td class="izquierda">Enfermedades Cardiovasculares (Hipertensión Arterial, Enfermedades Valvulares, Bypass Aorto Coronario)</td><td colspan="2"><input name="cardiovascular" type="radio" value="si"></td><td colspan="2"><input name="cardiovascular" type="radio" value="no"></td>
+                            </tr>
+                            <tr>
+                                <td class="izquierda">Sida o VIH</td><td colspan="2"><input name="vih" type="radio" value="si"></td><td colspan="2"><input name="vih" type="radio" value="no"></td>
+                            </tr>
+                            <tr>
+                                <td class="izquierda">Enfermedades Reumatología (Artritis Reumatoide, Lupus, Esclerodermia, Artritis Soriatica, artrosis)</td><td colspan="2"><input name="reumatologia" type="radio" value="si"></td><td colspan="2"><input name="reumatologia" type="radio" value="no"></td>
+                            </tr>
+                            <tr>
+                                <td class="izquierda">Obesidad Mórbida Diagnosticada</td><td colspan="2"><input name="obesidad" type="radio" value="si"></td><td colspan="2"><input name="obesidad" type="radio" value="no"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <span>
+                        Aceptación: Otorgo mi consentimiento a que si la causa de un siniestro que me afecte a mi fuese producto, derive o estuviese relacionada con algunas de las enfermedades, dolencias o situaciones de salud antes indicada, se consideren ellas como enfermedades, dolencias o situaciones de salud diagnosticadas o conocidas antes de la contratación de este seguro, con la correspondiente exclusión de cobertura.
+                    </span>
+                    <br>
+                    <span>
+                        Asimismo, entiendo y concuerdo que cualquier reticencia o declaración falsa o errónea de mi parte, faculta a la compañía aseguradora para rechazar el pago de la indemnización reclamada, o poner término anticipado a todas las coberturas, formando esta declaración parte integrante de las condiciones del seguro contratado.
+                    </span><br><br>
+                    <input type="checkbox" name="checkbox" value="check" id="agree" /> I have read and agree to the Terms and Conditions and Privacy Policy
+              </div>
+              <div class="container survey1">
+                  <div class="form-group col-xs-12 col-sm-3 col-md-3">
+                    <label for="rutNumber" class="control-label">Nombres</label>
+                    <input type="text" class="form-control" required>
+                    <div class="help-block with-errors"></div>
+                  </div>
+                  <div class="form-group col-xs-12 col-sm-3 col-md-3">
+                    <label for="rutNumber" class="control-label">Apellido Paterno</label>
+                    <input type="text" class="form-control" required>
+                    <div class="help-block with-errors"></div>
+                  </div>
+                  <div class="form-group col-xs-12 col-sm-3 col-md-3">
+                    <label for="rutNumber" class="control-label">Apellido Materno</label>
+                    <input type="text" class="form-control" required>
+                    <div class="help-block with-errors"></div>
+                  </div>
+                  <div class="form-group col-xs-12 col-sm-3 col-md-3">
+                    <label for="rutNumber" class="control-label">Sexo</label>
+                    <select class="selectpicker form-control">
+                        <option>Masculino</option>
+                        <option>Femenino</option>
+                    </select>
+                    <div class="help-block with-errors"></div>
+                  </div>
+                  <div class="form-group col-xs-12 col-sm-3 col-md-3">
+                    <label for="rutNumber" class="control-label">Edad</label>
+                    <input type="text" class="form-control" required>
+                    <div class="help-block with-errors"></div>
+                  </div>
+                  <div class="form-group col-xs-12 col-sm-3 col-md-3">
+                    <label for="rutNumber" class="control-label">Email</label>
+                    <input type="email" class="form-control" required>
+                    <div class="help-block with-errors"></div>
+                  </div>
+                  <div class="form-group col-xs-12 col-sm-3 col-md-3">
+                    <label for="rutNumber" class="control-label">Teléfono</label>
+                    <input type="text" class="form-control" data-error="invalid Telefono" required>
+                    <div class="help-block with-errors"></div>
+                  </div>
+                  <div class="form-group col-xs-12 col-sm-3 col-md-3">
+                    <label for="rutNumber" class="control-label">Tipo Vivienda</label>
+                    <select class="selectpicker form-control">
+                        <option></option>
+                        <option>Casa</option>
+                        <option>Departamento</option>
+                    </select>
+                    <div class="help-block with-errors"></div>
+                  </div>
+                  <div class="form-group col-xs-12 col-sm-3 col-md-3">
+                    <label for="rutNumber" class="control-label">Calle</label>
+                    <input type="text" class="form-control" data-error="invalid Telefono" required>
+                    <div class="help-block with-errors"></div>
+                  </div>
+                  <div class="form-group col-xs-12 col-sm-3 col-md-3">
+                    <label for="rutNumber" class="control-label">Numero</label>
+                    <input type="text" class="form-control" data-error="invalid Telefono" required>
+                    <div class="help-block with-errors"></div>
+                  </div>
+                  <div class="form-group col-xs-12 col-sm-3 col-md-3">
+                    <label for="rutNumber" class="control-label">Region</label>
+                    <select class="selectpicker form-control">
+                        <option value="Seleccione"></option>
+                        <option value="Metropolitana de Santiago">Metropolitana de Santiago</option>
+                        <option value="Arica y Parinacota">Arica y Parinacota</option>
+                        <option value="Tarapacá">Tarapacá</option>
+                        <option value="Antofagasta">Antofagasta</option>
+                        <option value="Atacama">Atacama</option>
+                        <option value="Coquimbo">Coquimbo</option>
+                        <option value="Valparaíso">Valparaíso</option>
+                        <option value="Libertador Gral. Bernardo O¿Higgins">Libertador Gral. Bernardo O¿Higgins</option>
+                        <option value="Maule">Maule</option>
+                        <option value="Biobío">Biobío</option>
+                        <option value="Araucanía">Araucanía</option>
+                        <option value="Los Ríos">Los Ríos</option>
+                        <option value="Los Lagos">Los Lagos</option>
+                        <option value="Aisén del Gral. Carlos Ibáñez del Campo">Aisén del Gral. Carlos Ibáñez del Campo</option>
+                        <option value="Magallanes y de la Antártica Chilena">Magallanes y de la Antártica Chilena</option>
+                    </select>
+                    <div class="help-block with-errors"></div>
+                  </div>
+                  <div class="form-group col-xs-12 col-sm-3 col-md-3">
+                    <label for="rutNumber" class="control-label">Ciudad</label>
+                    <select class="selectpicker form-control">
+                        <option value="Seleccione"></option>
+                        <option value="Santiago">Santiago</option>
+                        <option value=" Aisén"> Aisén</option>
+                        <option value=" Antártica Chilena"> Antártica Chilena</option>
+                        <option value=" Antofagasta"> Antofagasta</option>
+                        <option value=" Arauco"> Arauco</option>
+                        <option value=" Arica"> Arica</option>
+                        <option value=" Biobío"> Biobío</option>
+                        <option value=" Cachapoal"> Cachapoal</option>
+                        <option value=" Capitán Prat"> Capitán Prat</option>
+                        <option value=" Cardenal Caro"> Cardenal Caro</option>
+                        <option value=" Cauquenes"> Cauquenes</option>
+                        <option value=" Cautín"> Cautín</option>
+                        <option value=" Chacabuco"> Chacabuco</option>
+                        <option value=" Chañaral"> Chañaral</option>
+                        <option value=" Chiloé"> Chiloé</option>
+                        <option value=" Choapa"> Choapa</option>
+                        <option value=" Coihaique"> Coihaique</option>
+                        <option value=" Colchagua"> Colchagua</option>
+                        <option value=" Concepción"> Concepción</option>
+                        <option value=" Copiapó"> Copiapó</option>
+                        <option value=" Cordillera"> Cordillera</option>
+                        <option value=" Curicó"> Curicó</option>
+                        <option value=" ElLoa"> ElLoa</option>
+                        <option value=" Elqui"> Elqui</option>
+                        <option value=" General Carrera"> General Carrera</option>
+                        <option value=" Huasco"> Huasco</option>
+                        <option value=" Iquique"> Iquique</option>
+                        <option value=" Isla de Pascua"> Isla de Pascua</option>
+                        <option value=" Limarí"> Limarí</option>
+                        <option value=" Linares"> Linares</option>
+                        <option value=" Llanquihue"> Llanquihue</option>
+                        <option value=" LosAndes"> LosAndes</option>
+                        <option value=" Magallanes"> Magallanes</option>
+                        <option value=" Maipo"> Maipo</option>
+                        <option value=" Malleco"> Malleco</option>
+                        <option value=" Marga Marga"> Marga Marga</option>
+                        <option value=" Melipilla"> Melipilla</option>
+                        <option value=" Ñuble"> Ñuble</option>
+                        <option value=" Osorno"> Osorno</option>
+                        <option value=" Palena"> Palena</option>
+                        <option value=" Parinacota"> Parinacota</option>
+                        <option value=" Petorca"> Petorca</option>
+                        <option value=" Quillota"> Quillota</option>
+                        <option value=" Ranco"> Ranco</option>
+                        <option value=" San Antonio"> San Antonio</option>
+                        <option value=" San Felipe de Aconcagua"> San Felipe de Aconcagua</option>
+                        <option value=" Talagante"> Talagante</option>
+                        <option value=" Talca"> Talca</option>
+                        <option value=" Tamarugal"> Tamarugal</option>
+                        <option value=" Tierra del Fuego"> Tierra del Fuego</option>
+                        <option value=" Tocopilla"> Tocopilla</option>
+                        <option value=" Última Esperanza"> Última Esperanza</option>
+                        <option value=" Valdivia"> Valdivia</option>
+                        <option value=" Valparaíso"> Valparaíso</option>
+                    </select>
+                    <div class="help-block with-errors"></div>
+                  </div>
+                  <div class="form-group col-xs-12 col-sm-3 col-md-3">
+                    <label for="rutNumber" class="control-label">Comuna</label>
+                    <select class="selectpicker form-control">
+                        <option value="Seleccione"></option>
+                        <option value="Algarrobo">Algarrobo</option>
+                        <option value=" Alhue"> Alhue</option>
+                        <option value=" Alto Biobio"> Alto Biobio</option>
+                        <option value=" Alto Del Carmen"> Alto Del Carmen</option>
+                        <option value=" Alto Hospicio"> Alto Hospicio</option>
+                        <option value=" Ancud"> Ancud</option>
+                        <option value=" Andacollo"> Andacollo</option>
+                        <option value=" Angol"> Angol</option>
+                        <option value=" Antofagasta"> Antofagasta</option>
+                        <option value=" Antuco"> Antuco</option>
+                        <option value=" Arauco"> Arauco</option>
+                        <option value=" Arica"> Arica</option>
+                        <option value=" Aysen"> Aysen</option>
+                        <option value=" Buin"> Buin</option>
+                        <option value=" Bulnes"> Bulnes</option>
+                        <option value=" Cabildo"> Cabildo</option>
+                        <option value=" Cabo De Hornos"> Cabo De Hornos</option>
+                        <option value=" Cabrero"> Cabrero</option>
+                        <option value=" Calama"> Calama</option>
+                        <option value=" Calbuco"> Calbuco</option>
+                        <option value=" Caldera"> Caldera</option>
+                        <option value=" Calera De Tango"> Calera De Tango</option>
+                        <option value=" Calle Larga"> Calle Larga</option>
+                        <option value=" Camarones"> Camarones</option>
+                        <option value=" Camina"> Camina</option>
+                        <option value=" Canela"> Canela</option>
+                        <option value=" Canete"> Canete</option>
+                        <option value=" Carahue"> Carahue</option>
+                        <option value=" Cartagena"> Cartagena</option>
+                        <option value=" Casablanca"> Casablanca</option>
+                        <option value=" Castro"> Castro</option>
+                        <option value=" Catemu"> Catemu</option>
+                        <option value=" Cauquenes"> Cauquenes</option>
+                        <option value=" Cerrillos"> Cerrillos</option>
+                        <option value=" Cerro Navia"> Cerro Navia</option>
+                        <option value=" Chaiten"> Chaiten</option>
+                        <option value=" Chanaral"> Chanaral</option>
+                        <option value=" Chanco"> Chanco</option>
+                        <option value=" Chepica"> Chepica</option>
+                        <option value=" Chiguayante"> Chiguayante</option>
+                        <option value=" Chile Chico"> Chile Chico</option>
+                        <option value=" Chillan"> Chillan</option>
+                        <option value=" Chillan Viejo"> Chillan Viejo</option>
+                        <option value=" Chimbarongo"> Chimbarongo</option>
+                        <option value=" Cholchol"> Cholchol</option>
+                        <option value=" Chonchi"> Chonchi</option>
+                        <option value=" Cisnes"> Cisnes</option>
+                        <option value=" Cobquecura"> Cobquecura</option>
+                        <option value=" Cochamo"> Cochamo</option>
+                        <option value=" Cochrane"> Cochrane</option>
+                        <option value=" Codegua"> Codegua</option>
+                        <option value=" Coelemu"> Coelemu</option>
+                        <option value=" Coihueco"> Coihueco</option>
+                        <option value=" Coinco"> Coinco</option>
+                        <option value=" Colbun"> Colbun</option>
+                        <option value=" Colchane"> Colchane</option>
+                        <option value=" Colina"> Colina</option>
+                        <option value=" Collipulli"> Collipulli</option>
+                        <option value=" Coltauco"> Coltauco</option>
+                        <option value=" Combarbala"> Combarbala</option>
+                        <option value=" Concepcion"> Concepcion</option>
+                        <option value=" Conchali"> Conchali</option>
+                        <option value=" Concon"> Concon</option>
+                        <option value=" Constitucion"> Constitucion</option>
+                        <option value=" Contulmo"> Contulmo</option>
+                        <option value=" Copiapo"> Copiapo</option>
+                        <option value=" Coquimbo"> Coquimbo</option>
+                        <option value=" Coronel"> Coronel</option>
+                        <option value=" Corral"> Corral</option>
+                        <option value=" Coyhaique"> Coyhaique</option>
+                        <option value=" Cunco"> Cunco</option>
+                        <option value=" Curacautin"> Curacautin</option>
+                        <option value=" Curacavi"> Curacavi</option>
+                        <option value=" Curaco De Velez"> Curaco De Velez</option>
+                        <option value=" Curanilahue"> Curanilahue</option>
+                        <option value=" Curarrehue"> Curarrehue</option>
+                        <option value=" Curepto"> Curepto</option>
+                        <option value=" Curico"> Curico</option>
+                        <option value=" Dalcahue"> Dalcahue</option>
+                        <option value=" Diego De Almagro"> Diego De Almagro</option>
+                        <option value=" Donihue"> Donihue</option>
+                        <option value=" El Bosque"> El Bosque</option>
+                        <option value=" El Carmen"> El Carmen</option>
+                        <option value=" El Monte"> El Monte</option>
+                        <option value=" El Quisco"> El Quisco</option>
+                        <option value=" El Tabo"> El Tabo</option>
+                        <option value=" Empedrado"> Empedrado</option>
+                        <option value=" Ercilla"> Ercilla</option>
+                        <option value=" Estacion Central"> Estacion Central</option>
+                        <option value=" Florida"> Florida</option>
+                        <option value=" Freire"> Freire</option>
+                        <option value=" Freirina"> Freirina</option>
+                        <option value=" Fresia"> Fresia</option>
+                        <option value=" Frutillar"> Frutillar</option>
+                        <option value=" Futaleufu"> Futaleufu</option>
+                        <option value=" Futrono"> Futrono</option>
+                        <option value=" Galvarino"> Galvarino</option>
+                        <option value=" General Lagos"> General Lagos</option>
+                        <option value=" Gorbea"> Gorbea</option>
+                        <option value=" Graneros"> Graneros</option>
+                        <option value=" Guaitecas"> Guaitecas</option>
+                        <option value=" Hijuelas"> Hijuelas</option>
+                        <option value=" Hualaihue"> Hualaihue</option>
+                        <option value=" Hualane"> Hualane</option>
+                        <option value=" Hualpen"> Hualpen</option>
+                        <option value=" Hualqui"> Hualqui</option>
+                        <option value=" Huara"> Huara</option>
+                        <option value=" Huasco"> Huasco</option>
+                        <option value=" Huechuraba"> Huechuraba</option>
+                        <option value=" Illapel"> Illapel</option>
+                        <option value=" Independencia"> Independencia</option>
+                        <option value=" Iquique"> Iquique</option>
+                        <option value=" Isla De Maipo"> Isla De Maipo</option>
+                        <option value=" Isla De Pascua"> Isla De Pascua</option>
+                        <option value=" Juan Fernandez"> Juan Fernandez</option>
+                        <option value=" La Calera"> La Calera</option>
+                        <option value=" La Cisterna"> La Cisterna</option>
+                        <option value=" La Cruz"> La Cruz</option>
+                        <option value=" La Estrella"> La Estrella</option>
+                        <option value=" La Florida"> La Florida</option>
+                        <option value=" La Granja"> La Granja</option>
+                        <option value=" La Higuera"> La Higuera</option>
+                        <option value=" La Ligua"> La Ligua</option>
+                        <option value=" La Pintana"> La Pintana</option>
+                        <option value=" La Reina"> La Reina</option>
+                        <option value=" La Serena"> La Serena</option>
+                        <option value=" La Union"> La Union</option>
+                        <option value=" Lago Ranco"> Lago Ranco</option>
+                        <option value=" Lago Verde"> Lago Verde</option>
+                        <option value=" Laguna Blanca"> Laguna Blanca</option>
+                        <option value=" Laja"> Laja</option>
+                        <option value=" Lampa"> Lampa</option>
+                        <option value=" Lanco"> Lanco</option>
+                        <option value=" Las Cabras"> Las Cabras</option>
+                        <option value=" Las Condes"> Las Condes</option>
+                        <option value=" Lautaro"> Lautaro</option>
+                        <option value=" Lebu"> Lebu</option>
+                        <option value=" Licanten"> Licanten</option>
+                        <option value=" Limache"> Limache</option>
+                        <option value=" Linares"> Linares</option>
+                        <option value=" Litueche"> Litueche</option>
+                        <option value=" Llanquihue"> Llanquihue</option>
+                        <option value=" Llay-Llay"> Llay-Llay</option>
+                        <option value=" Lo Barnechea"> Lo Barnechea</option>
+                        <option value=" Lo Espejo"> Lo Espejo</option>
+                        <option value=" Lo Prado"> Lo Prado</option>
+                        <option value=" Lolol"> Lolol</option>
+                        <option value=" Loncoche"> Loncoche</option>
+                        <option value=" Longavi"> Longavi</option>
+                        <option value=" Lonquimay"> Lonquimay</option>
+                        <option value=" Los Alamos"> Los Alamos</option>
+                        <option value=" Los Andes"> Los Andes</option>
+                        <option value=" Los Angeles"> Los Angeles</option>
+                        <option value=" Los Lagos"> Los Lagos</option>
+                        <option value=" Los Muermos"> Los Muermos</option>
+                        <option value=" Los Sauces"> Los Sauces</option>
+                        <option value=" Los Vilos"> Los Vilos</option>
+                        <option value=" Lota"> Lota</option>
+                        <option value=" Lumaco"> Lumaco</option>
+                        <option value=" Machali"> Machali</option>
+                        <option value=" Macul"> Macul</option>
+                        <option value=" Mafil"> Mafil</option>
+                        <option value=" Maipu"> Maipu</option>
+                        <option value=" Malloa"> Malloa</option>
+                        <option value=" Marchigue"> Marchigue</option>
+                        <option value=" Maria Elena"> Maria Elena</option>
+                        <option value=" Maria Pinto"> Maria Pinto</option>
+                        <option value=" Mariquina"> Mariquina</option>
+                        <option value=" Maule"> Maule</option>
+                        <option value=" Maullin"> Maullin</option>
+                        <option value=" Mejillones"> Mejillones</option>
+                        <option value=" Melipeuco"> Melipeuco</option>
+                        <option value=" Melipilla"> Melipilla</option>
+                        <option value=" Molina"> Molina</option>
+                        <option value=" Monte Patria"> Monte Patria</option>
+                        <option value=" Mulchen"> Mulchen</option>
+                        <option value=" Nacimiento"> Nacimiento</option>
+                        <option value=" Nancagua"> Nancagua</option>
+                        <option value=" Natales"> Natales</option>
+                        <option value=" Navidad"> Navidad</option>
+                        <option value=" Negrete"> Negrete</option>
+                        <option value=" Ninhue"> Ninhue</option>
+                        <option value=" Niquen"> Niquen</option>
+                        <option value=" Nogales"> Nogales</option>
+                        <option value=" Nueva Imperial"> Nueva Imperial</option>
+                        <option value=" Nunoa"> Nunoa</option>
+                        <option value=" Ohiggins"> Ohiggins</option>
+                        <option value=" Olivar"> Olivar</option>
+                        <option value=" Ollague"> Ollague</option>
+                        <option value=" Olmue"> Olmue</option>
+                        <option value=" Osorno"> Osorno</option>
+                        <option value=" Ovalle"> Ovalle</option>
+                        <option value=" Padre Hurtado"> Padre Hurtado</option>
+                        <option value=" Padre Las Casas"> Padre Las Casas</option>
+                        <option value=" Paihuano"> Paihuano</option>
+                        <option value=" Paillaco"> Paillaco</option>
+                        <option value=" Paine"> Paine</option>
+                        <option value=" Palena"> Palena</option>
+                        <option value=" Palmilla"> Palmilla</option>
+                        <option value=" Panguipulli"> Panguipulli</option>
+                        <option value=" Panquehue"> Panquehue</option>
+                        <option value=" Papudo"> Papudo</option>
+                        <option value=" Paredones"> Paredones</option>
+                        <option value=" Parral"> Parral</option>
+                        <option value=" Pedro Aguirre Cerda"> Pedro Aguirre Cerda</option>
+                        <option value=" Pelarco"> Pelarco</option>
+                        <option value=" Pelluhue"> Pelluhue</option>
+                        <option value=" Pemuco"> Pemuco</option>
+                        <option value=" Penaflor"> Penaflor</option>
+                        <option value=" Penalolen"> Penalolen</option>
+                        <option value=" Pencahue"> Pencahue</option>
+                        <option value=" Penco"> Penco</option>
+                        <option value=" Peralillo"> Peralillo</option>
+                        <option value=" Perquenco"> Perquenco</option>
+                        <option value=" Petorca"> Petorca</option>
+                        <option value=" Peumo"> Peumo</option>
+                        <option value=" Pica"> Pica</option>
+                        <option value=" Pichidegua"> Pichidegua</option>
+                        <option value=" Pichilemu"> Pichilemu</option>
+                        <option value=" Pinto"> Pinto</option>
+                        <option value=" Pirque"> Pirque</option>
+                        <option value=" Pitrufquen"> Pitrufquen</option>
+                        <option value=" Placilla"> Placilla</option>
+                        <option value=" Portezuelo"> Portezuelo</option>
+                        <option value=" Porvenir"> Porvenir</option>
+                        <option value=" Pozo Almonte"> Pozo Almonte</option>
+                        <option value=" Primavera"> Primavera</option>
+                        <option value=" Providencia"> Providencia</option>
+                        <option value=" Puchuncavi"> Puchuncavi</option>
+                        <option value=" Pucon"> Pucon</option>
+                        <option value=" Pudahuel"> Pudahuel</option>
+                        <option value=" Puente Alto"> Puente Alto</option>
+                        <option value=" Puerto Montt"> Puerto Montt</option>
+                        <option value=" Puerto Octay"> Puerto Octay</option>
+                        <option value=" Puerto Varas"> Puerto Varas</option>
+                        <option value=" Pumanque"> Pumanque</option>
+                        <option value=" Punitaqui"> Punitaqui</option>
+                        <option value=" Punta Arenas"> Punta Arenas</option>
+                        <option value=" Puqueldon"> Puqueldon</option>
+                        <option value=" Puren"> Puren</option>
+                        <option value=" Purranque"> Purranque</option>
+                        <option value=" Putaendo"> Putaendo</option>
+                        <option value=" Putre"> Putre</option>
+                        <option value=" Puyehue"> Puyehue</option>
+                        <option value=" Queilen"> Queilen</option>
+                        <option value=" Quellon"> Quellon</option>
+                        <option value=" Quemchi"> Quemchi</option>
+                        <option value=" Quilaco"> Quilaco</option>
+                        <option value=" Quilicura"> Quilicura</option>
+                        <option value=" Quilleco"> Quilleco</option>
+                        <option value=" Quillon"> Quillon</option>
+                        <option value=" Quillota"> Quillota</option>
+                        <option value=" Quilpue"> Quilpue</option>
+                        <option value=" Quinchao"> Quinchao</option>
+                        <option value=" Quinta De Tilcoco"> Quinta De Tilcoco</option>
+                        <option value=" Quinta Normal"> Quinta Normal</option>
+                        <option value=" Quintero"> Quintero</option>
+                        <option value=" Quirihue"> Quirihue</option>
+                        <option value=" Rancagua"> Rancagua</option>
+                        <option value=" Ranquil"> Ranquil</option>
+                        <option value=" Rauco"> Rauco</option>
+                        <option value=" Recoleta"> Recoleta</option>
+                        <option value=" Renaico"> Renaico</option>
+                        <option value=" Renca"> Renca</option>
+                        <option value=" Rengo"> Rengo</option>
+                        <option value=" Requinoa"> Requinoa</option>
+                        <option value=" Retiro"> Retiro</option>
+                        <option value=" Rinconada"> Rinconada</option>
+                        <option value=" Rio Bueno"> Rio Bueno</option>
+                        <option value=" Rio Claro"> Rio Claro</option>
+                        <option value=" Rio Hurtado"> Rio Hurtado</option>
+                        <option value=" Rio Ibanez"> Rio Ibanez</option>
+                        <option value=" Rio Negro"> Rio Negro</option>
+                        <option value=" Rio Verde"> Rio Verde</option>
+                        <option value=" Romeral"> Romeral</option>
+                        <option value=" Saavedra"> Saavedra</option>
+                        <option value=" Sagrada Familia"> Sagrada Familia</option>
+                        <option value=" Salamanca"> Salamanca</option>
+                        <option value=" San Antonio"> San Antonio</option>
+                        <option value=" San Bernardo"> San Bernardo</option>
+                        <option value=" San Carlos"> San Carlos</option>
+                        <option value=" San Clemente"> San Clemente</option>
+                        <option value=" San Esteban"> San Esteban</option>
+                        <option value=" San Fabian"> San Fabian</option>
+                        <option value=" San Felipe"> San Felipe</option>
+                        <option value=" San Fernando"> San Fernando</option>
+                        <option value=" San Francisco De Mostazal"> San Francisco De Mostazal</option>
+                        <option value=" San Gregorio"> San Gregorio</option>
+                        <option value=" San Ignacio"> San Ignacio</option>
+                        <option value=" San Javier"> San Javier</option>
+                        <option value=" San Joaquin"> San Joaquin</option>
+                        <option value=" San Jose De Maipo"> San Jose De Maipo</option>
+                        <option value=" San Juan De La Costa"> San Juan De La Costa</option>
+                        <option value=" San Miguel"> San Miguel</option>
+                        <option value=" San Nicolas"> San Nicolas</option>
+                        <option value=" San Pablo"> San Pablo</option>
+                        <option value=" San Pedro"> San Pedro</option>
+                        <option value=" San Pedro De Atacama"> San Pedro De Atacama</option>
+                        <option value=" San Pedro De La Paz"> San Pedro De La Paz</option>
+                        <option value=" San Rafael"> San Rafael</option>
+                        <option value=" San Ramon"> San Ramon</option>
+                        <option value=" San Rosendo"> San Rosendo</option>
+                        <option value=" San Vicente"> San Vicente</option>
+                        <option value=" Santa Barbara"> Santa Barbara</option>
+                        <option value=" Santa Cruz"> Santa Cruz</option>
+                        <option value=" Santa Juana"> Santa Juana</option>
+                        <option value=" Santa Maria"> Santa Maria</option>
+                        <option value=" Santiago"> Santiago</option>
+                        <option value=" Santiago Oeste"> Santiago Oeste</option>
+                        <option value=" Santiago Sur"> Santiago Sur</option>
+                        <option value=" Santo Domingo"> Santo Domingo</option>
+                        <option value=" Sierra Gorda"> Sierra Gorda</option>
+                        <option value=" Talagante"> Talagante</option>
+                        <option value=" Talca"> Talca</option>
+                        <option value=" Talcahuano"> Talcahuano</option>
+                        <option value=" Taltal"> Taltal</option>
+                        <option value=" Temuco"> Temuco</option>
+                        <option value=" Teno"> Teno</option>
+                        <option value=" Teodoro"> Teodoro</option>
+                        <option value=" Schmidt"> Schmidt</option>
+                        <option value=" Tierra Amarilla"> Tierra Amarilla</option>
+                        <option value=" Til-Til"> Til-Til</option>
+                        <option value=" Timaukel"> Timaukel</option>
+                        <option value=" Tirua"> Tirua</option>
+                        <option value=" Tocopilla"> Tocopilla</option>
+                        <option value=" Tolten"> Tolten</option>
+                        <option value=" Tome"> Tome</option>
+                        <option value=" Torres Del Paine"> Torres Del Paine</option>
+                        <option value=" Tortel"> Tortel</option>
+                        <option value=" Traiguen"> Traiguen</option>
+                        <option value=" Trehuaco"> Trehuaco</option>
+                        <option value=" Tucapel"> Tucapel</option>
+                        <option value=" Valdivia"> Valdivia</option>
+                        <option value=" Vallenar"> Vallenar</option>
+                        <option value=" Valparaiso"> Valparaiso</option>
+                        <option value=" Vichuquen"> Vichuquen</option>
+                        <option value=" Victoria"> Victoria</option>
+                        <option value=" Vicuna"> Vicuna</option>
+                        <option value=" Vilcun"> Vilcun</option>
+                        <option value=" Villa Alegre"> Villa Alegre</option>
+                        <option value=" Villa Alemana"> Villa Alemana</option>
+                        <option value=" Villarrica"> Villarrica</option>
+                        <option value=" Vina Del Mar"> Vina Del Mar</option>
+                        <option value=" Vitacura"> Vitacura</option>
+                        <option value=" Yerbas Buenas"> Yerbas Buenas</option>
+                        <option value=" Yumbel"> Yumbel</option>
+                        <option value=" Yungay"> Yungay</option>
+                        <option value=" Zapallar"> Zapallar</option>
+                    </select>
+                    <div class="help-block with-errors"></div>
+                  </div>
+              </div>
+              <br>
+              <div class="container addbenefi">
+                  <div class="form-group col-xs-12 col-sm-3 col-md-3">
+                    <label for="rutNumber" class="control-label">Parentesco</label>
+                    <select class="selectpicker form-control">
+                        <option value="Seleccione"></option>
+                        <option value="Abuelos">Abuelos</option>
+                        <option value=" Banco"> Banco</option>
+                        <option value=" Cónyuge"> Cónyuge</option>
+                        <option value=" Arrendatario"> Arrendatario</option>
+                        <option value=" Dependiente"> Dependiente</option>
+                        <option value=" Hijos"> Hijos</option>
+                        <option value=" Suegros"> Suegros</option>
+                        <option value=" Hermanos"> Hermanos</option>
+                        <option value=" Tíos"> Tíos</option>
+                        <option value=" herederos Legales"> herederos Legales</option>
+                        <option value=" Asegurado Menor"> Asegurado Menor</option>
+                        <option value=" Nietos"> Nietos</option>
+                        <option value=" Otros"> Otros</option>
+                        <option value=" Padres"> Padres</option>
+                        <option value=" Propietario"> Propietario</option>
+                        <option value=" Sobrinos"> Sobrinos</option>
+                        <option value=" Titular"> Titular</option>
+                        <option value=" Tutor"> Tutor</option>
+                        <option value=" A Favor"> A Favor</option>
+                    </select>
+                    <div class="help-block with-errors"></div>
+                  </div>
+                  <div class="form-group col-xs-12 col-sm-3 col-md-3">
+                    <label for="rutNumber" class="control-label">Rut</label>
+                    <input type="text" class="form-control" data-error="invalid Rut" required>
+                    <div class="help-block with-errors"></div>
+                  </div>
+                  <div class="form-group col-xs-12 col-sm-3 col-md-3">
+                    <label for="rutNumber" class="control-label">Nombres</label>
+                    <input type="text" class="form-control" data-error="invalid Nombres" required>
+                    <div class="help-block with-errors"></div>
+                  </div>
+                  <div class="form-group col-xs-12 col-sm-3 col-md-3">
+                    <label for="rutNumber" class="control-label">Apellido Paterno</label>
+                    <input type="text" class="form-control" data-error="invalid Rut" required>
+                    <div class="help-block with-errors"></div>
+                  </div>
+                  <div class="form-group col-xs-12 col-sm-3 col-md-3">
+                    <label for="rutNumber" class="control-label">Apellido Materno</label>
+                    <input type="text" class="form-control" data-error="invalid Nombres" required>
+                    <div class="help-block with-errors"></div>
+                  </div>
+                  <div class="form-group col-xs-12 col-sm-3 col-md-3">
+                    <label for="rutNumber" class="control-label">Fecha de Nacimiento</label>
+                    <input type="text" class="form-control" data-error="invalid Rut" required>
+                    <div class="help-block with-errors"></div>
+                  </div>
+                  <div class="form-group col-xs-12 col-sm-3 col-md-3">
+                    <label for="rutNumber" class="control-label">Participacion</label>
+                    <input type="text" class="form-control" data-error="invalid Nombres" required>
+                    <div class="help-block with-errors"></div>
+                  </div>
+                  <div class="form-group col-xs-12 col-sm-3 col-md-3">
+                    <label for="rutNumber" class="control-label">Email</label>
+                    <input type="text" class="form-control" data-error="invalid Rut" required>
+                    <div class="help-block with-errors"></div>
+                  </div>
+                  <div class="form-group col-xs-12 col-sm-3 col-md-3">
+                    <label for="rutNumber" class="control-label">Teléfono</label>
+                    <input type="text" class="form-control" data-error="invalid Nombres" required>
+                    <div class="help-block with-errors"></div>
+                  </div>
+                  <div class="form-group col-xs-12 col-sm-3 col-md-3">
+                    <label for="rutNumber" class="control-label">Direccion</label>
+                    <input type="text" class="form-control" data-error="invalid Nombres" required>
+                    <div class="help-block with-errors"></div>
+                  </div>
+                  <div class="form-group col-xs-12 col-sm-3 col-md-3">
+                    <label for="rutNumber" class="control-label">Comuna</label>
+                    <input type="text" class="form-control" data-error="invalid Nombres" required>
+                    <div class="help-block with-errors"></div>
+                  </div>
+                  <div class="form-group col-xs-12 col-sm-3 col-md-3">
+                    <label for="rutNumber" class="control-label">Region</label>
+                    <input type="text" class="form-control" data-error="invalid Nombres" required>
+                    <div class="help-block with-errors"></div>
+                  </div>
+              </div>
+              <div class="form-group col-xs-12">
+                <button class="btn btn-primary" id="addbeneficiario"> + Beneficiario</button>
+                <button class="btn btn-primary pull-right" id="continue1">Continuar &gt;</button>
+              </div>
+            </form>
+        </div>
+    </div>
+    <footer id="footer" class="midnight-blue">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    &copy; 2017 <a target="_blank" href="#">EspacioSeguro SPA</a>. Todos los derechos reservados.
+                </div>
+                <div class="col-sm-6">
+                    <ul class="pull-right">
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="../about-us.html">Sobre Espacio Seguro</a></li>
+                        <li><a href="#">Legal</a></li>
+                        <li><a href="../contact-us.html">Contáctanos</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+    </footer> 
+    <!--/#footer-->
+    <div class="message_template">
+            <li class="message">
+                <div class="avatar">
+                </div>
+                <div class="text_wrapper">
+                    <div class="text"></div>
+                </div>
+            </li>
+    </div>
+    </div>
+    <script src="../js/jquery.js"></script>
+    <script src="../js/cleave.js"></script>
+    <!-- <script src="//netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script> -->
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery.prettyPhoto.js"></script>
+    <script src="../js/jquery.isotope.min.js"></script>
+    <script src="../js/wow.min.js"></script>
+    <script src="../js/validator.js"></script>
+    <script src="../js/moment-with-locales.js"></script>
+    <script src="../js/bootstrap-datetimepicker.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/locale/es.js"></script>
+    <script type="text/javascript">
+        (function () {
+    var Message;
+    Message = function (arg) {
+        this.text = arg.text, this.message_side = arg.message_side;
+        this.draw = function (_this) {
+            return function () {
+                var $message;
+                $message = $($('.message_template').clone().html());
+                $message.addClass(_this.message_side).find('.text').html(_this.text);
+                $('.messages').append($message);
+                return setTimeout(function () {
+                    return $message.addClass('appeared');
+                }, 0);
+            };
+        }(this);
+        return this;
+    };
+    $(function () {
+        var getMessageText, message_side, sendMessage;
+        message_side = 'right';
+        getMessageText = function () {
+            var $message_input;
+            $message_input = $('.message_input');
+            return $message_input.val();
+        };
+        sendMessage = function (text) {
+            var $messages, message;
+            if (text.trim() === '') {
+                return;
+            }
+            $('.message_input').val('');
+            $messages = $('.messages');
+            message_side = message_side === 'left' ? 'right' : 'left';
+            message = new Message({
+                text: text,
+                message_side: message_side
+            });
+            message.draw();
+            return $messages.animate({ scrollTop: $messages.prop('scrollHeight') }, 300);
+        };
+
+        $('.close').click(function() {
+            if($(".messages").css("display") == 'block'){
+                $(".chat_window").css('height','57px');
+            } else {
+                $(".chat_window").css('height','450px');
+            }
+            $(".chatcontent").toggle();
+            
+        });
+        $('.send_message').click(function (e) {
+            return sendMessage(getMessageText());
+        });
+        $('.message_input').keyup(function (e) {
+            if (e.which === 13) {
+                return sendMessage(getMessageText());
+            }
+        });
+        $('#form').validator().on('submit', function (e) {
+            e.preventDefault();
+            $('#form').css("display", "none");
+            var name = $("#inputName").val();
+            sendMessage('Hi ' + name + ',\n   How can I help you today? Regards, Insurance Doctor Support :)');
+            $(".message_input").prop("disabled", false);
+        })
+        $('.close').click();
+        $(".message_input").prop("disabled", true);
+        $('.navbar-toggle').click(function (e) {
+            $('.btn-circle').toggleClass('btn-primary-outline');
+        });
+        
+        $('#birthdaypicker').datetimepicker({
+            locale: 'es',
+            format: 'DD/MM/YYYY',
+            minDate : '1937-01-01'
+        });
+
+        new Cleave('#rutNumber', {
+            numericOnly: true,
+            delimiters: ['-'],
+            blocks: [8, 1]
+        });
+        $(".survey1").addClass('hidden');
+        $("#addbeneficiario").addClass('hidden');
+        $(".addbenefi").addClass('hidden');
+        $("#continue1").on('click', function() {
+            if (!$("#addbeneficiario").hasClass('hidden')) {
+                location.href = "index.html";
+            }
+            $(".survey").addClass('hidden');
+            $(".survey1").removeClass('hidden');
+            $("#addbeneficiario").removeClass('hidden');   
+        });
+        $("#addbeneficiario").on('click', function() {
+            $(".addbenefi").toggleClass('hidden');
+            if($(".addbenefi").hasClass('hidden')) {
+                $("#addbeneficiario").html("+ Beneficiario");
+            } else {
+                $("#addbeneficiario").html("- Beneficiario");
+            }
+        });
+    });
+
+}.call(this));
+    </script>
+</body>
+</html>

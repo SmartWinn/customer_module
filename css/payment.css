@@ -1,0 +1,117 @@
+.header {
+    position: relative;
+    height: 100px !important;
+    background-color: #eee;
+    box-shadow: 4px 5px 4px rgba(85, 94, 97, 0.21);
+}
+
+.logodiv {
+    padding-top: 20px;
+    padding-left: 50px;
+}
+
+body{
+  padding:0;
+  margin:0;
+  /*background: url(https://subtlepatterns.com/patterns/scribble_light.png) #FFF;*/
+  font-size:62.5%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.step {
+    width: 100%;
+    height: 63px;
+    background: #5bc0e0;
+    color: #FFF;
+    padding-left: 1%;
+    padding-top: 5px;
+    border-bottom: 3px solid #d9d9d9;
+    border-radius: 2px;
+    float: left;
+}
+
+.number {
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    color: #888;
+    font-size: 36px;
+    text-align: center;
+    border-radius: 50%;
+    float: left;
+}
+
+.title {
+    float: left;
+    width: 80%;
+    height: 50px;
+    margin-left: 1%;
+    font-size: 1em;
+    font-weight: 300;
+}
+
+.title h1 {
+    /*margin-top: 0px;*/
+    font-size: 1.5em;
+    margin: .67em 0;
+}
+
+#wrap {
+  width: 100%;
+  margin: 20px auto;
+}
+
+.content {
+    padding: 2em 2em;
+    width: 100%;
+    margin: 0 auto;
+    background: #FFF;
+    height: auto;
+    display: block;
+    float: left;
+}
+
+.content div {
+    margin-top: 10px;
+}
+
+.content label:not(.pagoradio) {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: block;
+}
+
+.pagoradio {
+    display: block;   
+}
+
+.container {
+    width: 70% !important;
+}
+
+.inspectr2 {
+    display: none;
+}
+
+.continue {
+  display:block;
+  float:right;
+  background:#5bc0e0;
+  width:200px;
+  border:0;
+  padding:5px 15px;
+  font-size:1.6em;
+  color:#FFF;
+  border-bottom:3px solid #337f97;
+  border-radius:2px;
+  clear:both;
+  text-align:center;
+  text-decoration: none;
+  margin-top:15px;
+  text-decoration: none !important;
+}
+
+.upper {
+  text-transform: uppercase;
+}
