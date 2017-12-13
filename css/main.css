@@ -376,7 +376,7 @@ header nav {
 
 .navbar-inverse .navbar-nav > li > a:hover{
   background-color: #eeeeee;
-  color: #fff;
+  color: #5cb85c;
 }
 
 .navbar-inverse {
@@ -1084,11 +1084,16 @@ a.accordion-toggle  i{
   padding: 0;
 }
 
-.partners ul li{
+.partners ul li {
   display: inline-block;
   float: left;
   width: 15%;
   margin-left: 5%;
+  opacity: 0.6;
+}
+
+.partners ul li:hover {
+  opacity: 1;
 }
 
 #conatcat-info{

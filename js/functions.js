@@ -1073,7 +1073,7 @@ $( document ).ready( function() {
     }
     function validateName(name)
     {
-        var regex = /^[a-z][a-z\s]*$/;
+        var regex = /^[A-Za-z][A-Za-z\s]*$/;
 
         if (regex.test(name)) {
             return true;
