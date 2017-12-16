@@ -1084,7 +1084,7 @@ $( document ).ready( function() {
     }
     function validatePhone(phone)
     {
-        var regex = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
+        var regex = /^\(?([0-9]{3})\)?([0-9]{3})?([0-9]{3})$/;
 
         if (regex.test(phone)) {
             return true;
@@ -1098,6 +1098,29 @@ $( document ).ready( function() {
         var regex = /[0-9]{7,8}-[0-9Kk]{1}/;
 
         if (regex.test(rut)) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+
+
+    function validateAges(ages)
+    {
+        var memebers = $(".quote-form-members").val();
+        var ages = ages.split(",");
+        console.log(ages, memebers); 
+        if (ages.length == memebers) {
+            for (var i = 0; i < ages.length; i++) {
+                var age = parseInt(ages[i], 10);
+                //check if age is a number or less than or greater than 100
+                if (isNaN(age) || age < 1 || age > 100)
+                { 
+                  alert("La edad debe ser un número entre 1 y 100");
+                  return false;
+                }
+            }
             return true;
         }
         else {
@@ -1144,7 +1167,9 @@ $( document ).ready( function() {
                 fieldValue = $( this ).is( 'input' ) || $( this ).is( 'select' ) ? $( this ).val() : $( this ).text();
 
                 if( ( $( this ).is( 'input' ) && fieldValue == '' ) || ( $( this ).is( 'select' ) && fieldValue == '-' ) ) {
-                    errorFound = true;
+                    if(!$(this).hasClass('quote-form-destination')) {
+                        errorFound = true;
+                    }
                     $( this ).addClass( 'error' );                                                                         
                 } else {
                     if ($(this).hasClass('quote-form-client-name')) {
@@ -1175,9 +1200,21 @@ $( document ).ready( function() {
                         } else {
                             $( this ).removeClass( 'error' );
                         }
+                    } else if ($(this).hasClass('quote-form-ages')) {
+                        if (!validateAges($(this).val())) {
+                            errorFound = true;
+                            $( this ).addClass( 'error' );
+                        } else {
+                            $( this ).removeClass( 'error' );
+                        }
                     } else {
                         $( this ).removeClass( 'error' );
                     }
+                }
+                if ($('.destinations').html() != '') {
+                    $('#destination').removeClass('error');
+                } else {
+                    $('#destination').addClass('error');
                 }
             }
             
@@ -1202,6 +1239,7 @@ $( document ).ready( function() {
             //       });
             if(insuranceType == "travel-insurance") {   
                 location.href = "filter/travel.html";
+                console.log('aaa');
                 return false;
             } else if(insuranceType == "life-insurance") {   
                 location.href = "products/life.html";

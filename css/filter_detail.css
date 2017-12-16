@@ -449,7 +449,7 @@ h3.table-title {
 .my_planTitle {
     font-size:2em;
     font-weight: bold;
-    height: 200px;
+    height: 150px;
 }
 .my_planPrice {
     font-size:1.4em;
@@ -469,7 +469,7 @@ h3.table-title {
 
 .my_feature {
   line-height:2.8em; 
-  background-color: #eee;  
+  background-color: #6ad8ef;  
 }
 
 @media (max-width: 768px) {
@@ -489,14 +489,19 @@ h3.table-title {
     background: rgb(224,234,242);
 }
 
+.my_planheader {
+  background: #6ad8ef;
+  border: 1px  solid #cdc;
+}
+
 .my_planHeader.my_plan1 a {
     background: rgb(72, 109, 139);
     color:white;
 }
 
 .my_planHeader.my_plan1 {
-    background: rgb(105, 153, 193);
-    border-bottom: thick solid rgb(72, 109, 139);
+    background: #7ae7d3;
+    border-bottom: thick solid rgb(111, 190, 175);
 }
 
 /* --- Plan 2 --------------------------- */
@@ -510,8 +515,8 @@ h3.table-title {
 }
 
 .my_planHeader.my_plan2 {
-    background: rgb(134, 162, 77);
-    border-bottom: thick solid rgb(108, 131, 62);
+    background: #eb8999;
+    border-bottom: thick solid rgb(208, 103, 120);
 }
 
 /* --- Plan 3 --------------------------- */

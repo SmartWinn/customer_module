@@ -77,7 +77,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
+                    <a class="navbar-brand" href="index.html"><img src="images/logHR.png" alt="logo"></a>
                 </div>
                 
                 <div class="collapse navbar-collapse navbar-right">
@@ -92,7 +92,7 @@
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Empresas<i class="fa fa-angle-down"></i></a>
                             <ul class="dropdown-menu">
                                 <li><a href="about-us.html">Seguros Empresas</a></li>
-                                <li><a href="../broker/workwithus.html">Trabaja con Nosotros</a></li>
+                                <li><a href="http://54.94.137.231:3005/workus/login">Trabaja con Nosotros</a></li>
                             </ul>
                         </li>
                         <li><a href="contact-us.html">Contáctanos</a></li> 
@@ -163,7 +163,7 @@
                 
                     <i class="fa fa-bus background-icon"></i>
                 
-                    <div class="quote-form-background" style="background-image: url( 'images/quotes/travel.png' );height: 810px !important;">
+                    <div class="quote-form-background" style="background-image: url( 'images/quotes/travel.png' );height: 880px !important;">
                     </div>
                     
                     <div class="quote-form-content" style="height: auto !important;">
@@ -172,10 +172,12 @@
                         <div class="form">
                             <h4>Información Personal:</h4>
                             <input type="text" class="quote-form-element quote-form-client-name" name="Full name" placeholder="Nombres..." />
-                            
+                            <input type="text" class="quote-form-element quote-form-client-name last" name="Last name" placeholder="Apellido paterno..." />
+
+                            <input type="text" class="quote-form-element quote-form-client-name" name="Last name" placeholder="Apellido materno..." />
                             <span class="custom-dropdown last">
                             
-                                <select name="How many persons?" class="custom-dropdown-select quote-form-element">
+                                <select name="How many persons?" class="custom-dropdown-select quote-form-element quote-form-members">
                                 
                                     <option value="-">¿Cuantas personas?</option>
                                     <option value="1">1</option>
@@ -207,16 +209,16 @@
                             <input type="text" name="E-mail Address" placeholder="Correo..." class="quote-form-element quote-form-client-email last" />
                             
                             <h4>Viajar:</h4>
-                            <ul class="destinations  col-xs-12 col-sm-12">
-                            </ul>
-                            <input id="destination" type="text" name="destination" placeholder="Destino..." class="quote-form-element" />
-                            <input type="text" name="ages" placeholder="Edad actual de cada uno (31, 23 ...)" class="quote-form-element last" />
+                            <ul class="destinations  col-xs-12 col-sm-12"></ul>
+                            <input id="destination" type="text" name="destination" placeholder="Destino..." class="quote-form-element quote-form-destination" />
+                            <input type="text" name="ages" placeholder="Edad actual de cada uno (31, 23 ...)" class="quote-form-element quote-form-ages last" />
                             <div class='input-group date' id='birthdaypicker'>
                                 <input type='text' class="form-control input-group-addon" placeholder="Fecha de Nacimiento" required/>
                             </div>
+                            <h4>Seleccione el intervalo de fechas de viaje:</h4>
                             <div class="input-daterange input-group" id="datepicker">
-                                <input type="text" class="input-sm form-control quote-form-element" name="from" placeholder="From date"/>
-                                <input type="text" class="input-sm form-control quote-form-element last" name="to" placeholder="To date"/>
+                                <input type="text" class="input-sm form-control quote-form-element" name="from" placeholder="Partir de la fecha"/>
+                                <input type="text" class="input-sm form-control quote-form-element last" name="to" placeholder="Hasta la fecha"/>
                             </div>
 
                             <button class="button button-navy-blue send-quote" type="button">Ir al paso 2<i class="fa fa-paper-plane-o"></i></button>
@@ -1001,7 +1003,7 @@
             </ol>
             <div class="carousel-inner">
 
-                <div class="item active" style="background-image: url(images/slider/bg1.jpg);background-position: 80% 64%!important">
+                <div class="item active" style="background-image: url(images/slider/bg1.jpg);background-position: 27% 64%!important">
                     <div class="container">
                         <div class="row slide-margin">
 <!-- 
@@ -1553,6 +1555,10 @@
                         <h3>Nuestras Alianzas</h3>
                         <ul>
                             <li><a href="http://www.liberty.cl">Liberty</a></li>
+                            <li><a href="http://www.rentanacional.cl">National income</a></li>
+                            <li><a href="http://www.mapfre.cl">Mapfre Seguros</a></li>
+                            <li><a href="http://www.bciseguros.cl">BCI Seguros</a></li>
+                            <li><a href="http://www.hdi.cl">HDI Seguros</a></li>
                         </ul>
                     </div>    
                 </div><!--/.col-md-4-->
@@ -1573,7 +1579,7 @@
     </section><!--/#bottom-->
 
     <footer id="footer" class="midnight-blue">
-        <div class="container">
+        <div class="container" style="width: 75%;">
             <div class="row">
                 <div class="col-sm-2">
                     &copy; 2017 <a target="_blank" href="#" title="Free Twitter Bootstrap WordPress Themes and HTML templates">EspacioSeguro SPA </a>. Todos los derechos reservados.
@@ -1668,15 +1674,14 @@
     $('.quote-form-client-phone').toArray().forEach(function(field){
         new Cleave(field, {
             numericOnly: true,
-            delimiters: ['-', '-'],
-            blocks: [3, 3, 4]
+            blocks: [9]
         });
     });
     $('.quote-form-client-rut').toArray().forEach(function(field){
         new Cleave(field, {
             numericOnly: true,
             delimiters: ['-'],
-            blocks: [9, 1]
+            blocks: [7, 1]
         });
     });
     $(function () {
@@ -1698,17 +1703,38 @@
         $("#eac-container-destination").on('click', function() {
             alert('a');
         });
+        (function($){
+            $.fn.datepicker.dates['es'] = {
+                days: ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"],
+                daysShort: ["Dom", "Lun", "Mar", "Mié", "Jue", "Vie", "Sáb"],
+                daysMin: ["Do", "Lu", "Ma", "Mi", "Ju", "Vi", "Sa"],
+                months: ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"],
+                monthsShort: ["Ene", "Feb", "Mar", "Abr", "May", "Jun", "Jul", "Ago", "Sep", "Oct", "Nov", "Dic"],
+                today: "Hoy",
+                monthsTitle: "Meses",
+                clear: "Borrar",
+                weekStart: 1,
+                format: "dd/mm/yyyy"
+            };
+        }(jQuery));
         $("#destination").easyAutocomplete(options);
         $(".easy-autocomplete").css('display', 'inline');
         $('.input-daterange').datepicker({
             autoclose: true,
-            startDate: new Date()
+            startDate: new Date(),
+            language: 'es'
         });
 
         $('#birthdaypicker').datetimepicker({
             locale: 'es',
             format: 'DD/MM/YYYY',
             minDate : '1937-01-01'
+        });
+
+        $('.custom-dropdown').on('click', function(e) {
+            // alert('1');
+            console.log('---');
+            $($(this).find('select')[0]).trigger("mousedown");
         });
 
     });
